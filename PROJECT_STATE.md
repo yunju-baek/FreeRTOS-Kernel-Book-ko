@@ -27,4 +27,5 @@ Codex에서 `ko/assets/`에 한국어 그림을 준비하고 있다. 파일별 �
 
 영문 원본·코드·라이선스는 보존한다. 예제 빌드·실행, 하드웨어 실행, PDF·웹 배포는 수행하지 않았다. 한국어판용 GitHub 원격은 아직 생성하지 않았다.
 
-다음 본문 작업은 별도 요청에 지정된 범위를 번역하고 원문·문체·코드·링크·그림을 검수한다. `not-started → draft → source-checked → language-reviewed → release-ready`로 실제 상태를 기록한다. 원문 버전이 바뀌면 영향을 다시 대조한다.
+- **ch01.md (1 머리말)**: 번역 및 `source-checked` 검수 완료 (`ko/ch01.md`). 제목은 사용자 요청에 따라 `한글(영어)` 병기 형식을 적용하고 영문 원본 앵커 ID를 보존함.
+- **다음 시작점**: `ch02.md` (2 The FreeRTOS Kernel Distribution) 번역 착수.
