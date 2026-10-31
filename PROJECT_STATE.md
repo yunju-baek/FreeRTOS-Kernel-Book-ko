@@ -28,4 +28,5 @@ Codex에서 `ko/assets/`에 한국어 그림을 준비하고 있다. 파일별 �
 영문 원본·코드·라이선스는 보존한다. 예제 빌드·실행, 하드웨어 실행, PDF·웹 배포는 수행하지 않았다. 한국어판용 GitHub 원격은 아직 생성하지 않았다.
 
 - **ch01.md (1 머리말)**: 번역 및 `source-checked` 검수 완료 (`ko/ch01.md`). 제목은 사용자 요청에 따라 `한글(영어)` 병기 형식을 적용하고 영문 원본 앵커 ID를 보존함.
-- **다음 시작점**: `ch02.md` (2 The FreeRTOS Kernel Distribution) 번역 착수.
+- **ch02.md (2 FreeRTOS 커널 배포판)**: 번역 및 `source-checked` 검수 완료 (`ko/ch02.md`). 디렉터리 트리, Listing 2.1 코드 템플릿, 표 1~4, 한글(영어) 병기 제목 및 영문 앵커 ID 적용 완료.
+- **다음 시작점**: `ch03.md` (3 Heap Memory Management) 번역 착수.

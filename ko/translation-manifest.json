@@ -68,10 +68,39 @@
       "source_path": "ch02.md",
       "source_blob_sha": "219b656ca14122222430f6b4a71648b0d7bd109b",
       "translation_path": "ko/ch02.md",
-      "status": "not-started",
-      "translated_sections": [],
-      "translated_at": null,
-      "reviews": []
+      "status": "source-checked",
+      "translated_sections": [
+        "2.1",
+        "2.2.1",
+        "2.2.2",
+        "2.2.3",
+        "2.2.4",
+        "2.2.5",
+        "2.2.6",
+        "2.2.7",
+        "2.2.8",
+        "2.3",
+        "2.4.1",
+        "2.4.2",
+        "2.5.1",
+        "2.5.2",
+        "2.5.3",
+        "2.5.4",
+        "2.5.5",
+        "2.5.6"
+      ],
+      "translated_at": "2026-11-01T08:46:41+09:00",
+      "reviews": [
+        {
+          "stage": "source-checked",
+          "reviewer": "Antigravity",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01T08:46:41+09:00",
+          "scope": "ch02.md full text",
+          "result": "pass",
+          "unresolved": []
+        }
+      ]
     },
     {
       "source_path": "ch03.md",
