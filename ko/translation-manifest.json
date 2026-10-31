@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "prepared_at": "2026-11-01T08:33:07+09:00",
+  "upstream": {
+    "repository_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Book",
+    "remote_name": "upstream",
+    "ref_at_clone": "main",
+    "commit": "ba20b2f820926587d5ee20ce312b3789d63f795c",
+    "commit_date": "2026-04-03T14:24:44-07:00",
+    "tree": "5903f9caeafe6b9c92d983ddd887b230b76c8541",
+    "shallow_clone": false
+  },
+  "submodules": [
+    {
+      "path": "examples/Win32-simulator-MSVC/FreeRTOS-Kernel",
+      "commit": "18ed8886fe3eed9dbe433a82cdc62ce5dc0315eb",
+      "repository_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel.git"
+    },
+    {
+      "path": "examples/Win32-simulator-MSVC/FreeRTOS-Kernel/portable/ThirdParty/Community-Supported-Ports",
+      "commit": "4273ca3211b99914f31518378fb590fbff064953",
+      "repository_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Community-Supported-Ports"
+    },
+    {
+      "path": "examples/Win32-simulator-MSVC/FreeRTOS-Kernel/portable/ThirdParty/Partner-Supported-Ports",
+      "commit": "3f9c99a682c5c796bb7eb89fd9c4385688fce27a",
+      "repository_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Partner-Supported-Ports"
+    }
+  ],
+  "style_version": "0.2",
+  "glossary_version": "0.2",
+  "status_values": [
+    "not-started",
+    "draft",
+    "source-checked",
+    "language-reviewed",
+    "release-ready"
+  ],
+  "files": [
+    {
+      "source_path": "ch01.md",
+      "source_blob_sha": "972518bdaf676a1b587591a18ec2a31d8dde81f9",
+      "translation_path": "ko/ch01.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch02.md",
+      "source_blob_sha": "219b656ca14122222430f6b4a71648b0d7bd109b",
+      "translation_path": "ko/ch02.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch03.md",
+      "source_blob_sha": "e211ec9b4019b9ad91596100b7babdd4317a4ad2",
+      "translation_path": "ko/ch03.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch04.md",
+      "source_blob_sha": "8718e30fac4eb8d74d57cdc20b4594f000e257ee",
+      "translation_path": "ko/ch04.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch05.md",
+      "source_blob_sha": "4661d9a7beb7b627e487edbb9ea0dc0976a2703a",
+      "translation_path": "ko/ch05.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch06.md",
+      "source_blob_sha": "52fcc8200b1d9a90adebcd932d736391954d8e68",
+      "translation_path": "ko/ch06.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch07.md",
+      "source_blob_sha": "02c18cb2392cf64d7cd3913e66f05934748aad63",
+      "translation_path": "ko/ch07.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch08.md",
+      "source_blob_sha": "e358419a6ee8e6e99ba0722cdbcb52f3e04a933c",
+      "translation_path": "ko/ch08.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch09.md",
+      "source_blob_sha": "e676ad32d6adfd08dc997f2658f935f7b3271391",
+      "translation_path": "ko/ch09.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch10.md",
+      "source_blob_sha": "244fec29482214400c5bb6881ed945cfbafb7761",
+      "translation_path": "ko/ch10.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch11.md",
+      "source_blob_sha": "7f990ef29c6c6ac679c06e12d337f01fb0013f1f",
+      "translation_path": "ko/ch11.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch12.md",
+      "source_blob_sha": "e9d5913c5bb7c2557c86a44261fb256d83b4f03e",
+      "translation_path": "ko/ch12.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "ch13.md",
+      "source_blob_sha": "5d5cbd1804cd8696530d9f1e63c9696d14230a46",
+      "translation_path": "ko/ch13.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "toc.md",
+      "source_blob_sha": "27c58bee458c132f4a173346a4309e395bdbed0a",
+      "translation_path": "ko/toc.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "booktitle.md",
+      "source_blob_sha": "220b0726b9ff98fb2ac4d1fa913e5b2c001147f9",
+      "translation_path": "ko/booktitle.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "dedication.md",
+      "source_blob_sha": "a8d24af343c3bb27486030289a067c26f9a95ece",
+      "translation_path": "ko/dedication.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "abbreviations.md",
+      "source_blob_sha": "f653ab73086b87f0711f29f542b987d5f704d0e9",
+      "translation_path": "ko/abbreviations.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    },
+    {
+      "source_path": "copyright.md",
+      "source_blob_sha": "cb0e62626a337e151c0cc5d76e54eb79831aac2a",
+      "translation_path": "ko/copyright.md",
+      "status": "not-started",
+      "translated_sections": [],
+      "translated_at": null,
+      "reviews": []
+    }
+  ]
+}

@@ -1,0 +1,1534 @@
+{
+  "upstream_commit": "ba20b2f820926587d5ee20ce312b3789d63f795c",
+  "prepared_at": "2026-11-01",
+  "assets": [
+    {
+      "source_path": "media/amazon-logo.jpg",
+      "source_sha256": "6e0a9367c7b22654649359032a8240fe36a48572116eb365924f10c381322aae",
+      "references": [],
+      "kind": "unused-upstream",
+      "target_path": "media/amazon-logo.jpg",
+      "status": "not-used",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/amazon-smiley-logo.png",
+      "source_sha256": "9943a895ccbf2636b7caf99218c5f602b2ddc295c747379a6b6d428481227bb2",
+      "references": [],
+      "kind": "unused-upstream",
+      "target_path": "media/amazon-smiley-logo.png",
+      "status": "not-used",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/aws-logo-hr.png",
+      "source_sha256": "dd7bba45aec46ac5b393465f6b7a224e1eb62bae54e46cdc2e8e1b4d8f3ba304",
+      "references": [
+        {
+          "source_document": "copyright.md",
+          "line": 6,
+          "figure": null,
+          "source_caption": ""
+        }
+      ],
+      "kind": "brand",
+      "target_path": "media/aws-logo-hr.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/aws-logo-lr.png",
+      "source_sha256": "460add22267a6909ed601cf64dbf74585ebaa84cf8167e967c395914776465ab",
+      "references": [],
+      "kind": "unused-upstream",
+      "target_path": "media/aws-logo-lr.png",
+      "status": "not-used",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/aws-logo.png",
+      "source_sha256": "be45b2982a75ae301a2af6eca7f1f209cc9b104569fcdaa84693b10eb7015990",
+      "references": [],
+      "kind": "unused-upstream",
+      "target_path": "media/aws-logo.png",
+      "status": "not-used",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.10_example_4.4_state_machine.png",
+      "source_sha256": "2699f9bfc38212b9d1899306faba705edc5ff80a447bdfb36ddf2052230396fc",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 1098,
+          "figure": "4.10",
+          "source_caption": "***Figure 4.10*** *Bold lines indicate the state transitions performed by the tasks in Example 4.4*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.10_example_4.4_state_machine.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.11_example_4.6_execution_pattern.png",
+      "source_sha256": "1d5085edc4786a906259d7a613f0a34925233a128f58804258d6c8d536ccac7c",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 1353,
+          "figure": "4.12",
+          "source_caption": "***Figure 4.12*** *The execution pattern of Example 4.6*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.11_example_4.6_execution_pattern.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.14_example_4.8_execution_sequence.png",
+      "source_sha256": "e87b50bf5c23ad4289cfd6ffbe567bc1c06b5ad7d12b53514639285aca7c0ad1",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 1815,
+          "figure": "4.14",
+          "source_caption": "***Figure 4.14*** *The sequence of task execution when running Example 4.8*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.14_example_4.8_execution_sequence.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.17_example_4.9_execution_sequence.png",
+      "source_sha256": "4f019550e308a48385837b4382b2137c20b3505bf4422a5bedbc8c1093277fcf",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 2027,
+          "figure": "4.17",
+          "source_caption": "***Figure 4.17*** *The execution sequence for Example 4.9*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.17_example_4.9_execution_sequence.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.18_preemption_execution_pattern.png",
+      "source_sha256": "00b3f10dacb5736af4f8921ed30b51272369330bb8d723bfb41862917a5dbe5f",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 2222,
+          "figure": "4.18",
+          "source_caption": "***Figure 4.18*** *Execution pattern highlighting task prioritization and preemption in a hypothetical application in which each task has been assigned a unique priority*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.18_preemption_execution_pattern.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.19_time_slicing_execution_pattern.png",
+      "source_sha256": "6919f873f5eabac9fb0637ae350c91684fc189d6cd550ca96cbdd59b328481e2",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 2279,
+          "figure": "4.19",
+          "source_caption": "***Figure 4.19*** *Execution pattern highlighting task prioritization and time slicing in a hypothetical application in which two tasks run at the same priority*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.19_time_slicing_execution_pattern.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.1_top_level_task_states.png",
+      "source_sha256": "0eb1d3b658cef9a242f8d7b4ae191a82d0f18c338b5dcab537e38513edd25031",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 118,
+          "figure": "4.1",
+          "source_caption": "***Figure 4.1*** *Top level task states and transitions*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.1_top_level_task_states.ko.png",
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Preserve Figure 4.1 layout, two opposite arrows, callout connectors and English state labels. Left callout: 현재 Running 상태가 아닌 모든 task는 Not Running 상태에 있다. Right callout: 어느 한 시점에 Running 상태인 task는 하나뿐이다. Translate only callout text; preserve all diagram elements.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "원본과 한국어 문구, 상태명, task 상자, 두 화살표 방향, callout 연결 및 비율을 시각 대조",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "7a679669522c192d6750e36d619d6a83a5f52095d0680a48ebed2dd6e1997fb0"
+    },
+    {
+      "source_path": "media/figure_4.20_time_slicing_with_yield_execution_pattern.png",
+      "source_sha256": "ff46594bba789dbc000ca12b52cab5b56958f48b8736085f463e338e92e8b04e",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 2338,
+          "figure": "4.20",
+          "source_caption": "***Figure 4.20*** *The execution pattern for the same scenario as shown in Figure 4.19, but this time with `configIDLE_SHOULD_YIELD` set to 1*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.20_time_slicing_with_yield_execution_pattern.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.21_equal_priority_without_time_slicing_execution_pattern.png",
+      "source_sha256": "a6a3f91c32f517f0b62a64c56322349e70ec882b9d629e589fab3cbd52d004b1",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 2382,
+          "figure": "4.21",
+          "source_caption": "***Figure 4.21*** *Execution pattern that demonstrates how tasks of equal priority can receive hugely different amounts of processing time when time slicing is not used*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.21_equal_priority_without_time_slicing_execution_pattern.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.22_cooperative_scheduler_execution_pattern.png",
+      "source_sha256": "89e5129083ec93ea19748f705c400487316f2d050c31d5d623b8ee9d0160be1f",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 2447,
+          "figure": "4.22",
+          "source_caption": "***Figure 4.22*** *Execution pattern demonstrating the behavior of the cooperative scheduler*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.22_cooperative_scheduler_execution_pattern.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.3_example_4.1_execution_pattern.png",
+      "source_sha256": "5d5c7d35eefcd7b0e5c8307fa8227ee7f702314aae569c39875dcf0b7a8886eb",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 437,
+          "figure": "4.3",
+          "source_caption": "***Figure 4.3*** *The actual execution pattern of the two Example 4.1 tasks*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.3_example_4.1_execution_pattern.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.4_expanded_execution_sequence_with_tick_interrupt.png",
+      "source_sha256": "6a6a2509a4d82f5e20d919916d8afcdb041f8c99f2748f048ca9f0858dd97a06",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 699,
+          "figure": "4.4",
+          "source_caption": "***Figure 4.4*** *The execution sequence expanded to show the tick interrupt executing*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.4_expanded_execution_sequence_with_tick_interrupt.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.6_execution_pattern_higher_priority_task.png",
+      "source_sha256": "bfd25c3fc011df1c0c72dc7959bc9c024265fa8322d4d5f0199dd6335cdb8f5f",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 839,
+          "figure": "4.6",
+          "source_caption": "***Figure 4.6*** *The execution pattern when one task has a higher priority than the other from Example 4.3*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.6_execution_pattern_higher_priority_task.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.7_full_task_state_machine.png",
+      "source_sha256": "3592c995483679c3e46cb8f8e917b05596a8c6b939d5c1ab3712f7511a8d16a1",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 917,
+          "figure": "4.7",
+          "source_caption": "***Figure 4.7*** *Full task state machine*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.7_full_task_state_machine.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/figure_4.9_vTaskDelay_execution_sequence.png",
+      "source_sha256": "47297bd59ca8797cf630baaf4b58efb1ff4e9e9921cdafa990dbb85a97f1abcd",
+      "references": [
+        {
+          "source_document": "ch04.md",
+          "line": 1060,
+          "figure": "4.9",
+          "source_caption": "***Figure 4.9*** *The execution sequence when the tasks use vTaskDelay() in place of the null loop*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/figure_4.9_vTaskDelay_execution_sequence.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/freeRTOS.png",
+      "source_sha256": "34f765c3984b5ade2472b855dc2da1b9b6f1a81e1a1ad72d00b4b562f08eb9c8",
+      "references": [
+        {
+          "source_document": "booktitle.md",
+          "line": 6,
+          "figure": null,
+          "source_caption": ""
+        }
+      ],
+      "kind": "brand",
+      "target_path": "media/freeRTOS.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image05.png",
+      "source_sha256": "bcd56be50be8d7e83ffddba59b76a154e1b9369a4bb331b9e90b021e3ee4235b",
+      "references": [
+        {
+          "source_document": "ch03.md",
+          "line": 147,
+          "figure": "3.1",
+          "source_caption": "***Figure 3.1*** *RAM being allocated from the heap\\_1 array each time a task is created*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image05.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image06.png",
+      "source_sha256": "be70bf71f42040847af961f5b0d563fd9e83561bb10174e35b8de5deff2eff8a",
+      "references": [
+        {
+          "source_document": "ch03.md",
+          "line": 191,
+          "figure": "3.2",
+          "source_caption": "***Figure 3.2*** *RAM being allocated and freed from the heap\\_2 array as tasks are created and deleted*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image06.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image07.png",
+      "source_sha256": "354ccfbdb6b529cc94bc8dab894dc3a6e5da43b22692f721b1bfb06c8ab5c979",
+      "references": [
+        {
+          "source_document": "ch03.md",
+          "line": 278,
+          "figure": "3.3",
+          "source_caption": "***Figure 3.3*** *RAM being allocated and freed from the heap\\_4 array*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image07.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image08.png",
+      "source_sha256": "de231acd8e1828a2274dc9e4b973050516eda5febc1d1d3d32258100c536c6ee",
+      "references": [
+        {
+          "source_document": "ch03.md",
+          "line": 409,
+          "figure": "3.4",
+          "source_caption": "***Figure 3.4*** *Memory Map*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image08.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image31.png",
+      "source_sha256": "dacfe22452522b04889bc3b6750a70dc4931a51b297456d518890ae8446f373d",
+      "references": [
+        {
+          "source_document": "ch05.md",
+          "line": 50,
+          "figure": "5.1",
+          "source_caption": "***Figure 5.1*** *An example sequence of writes to, and reads from a queue*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image31.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image32.jpg",
+      "source_sha256": "2e13aa7fc533ebd582ae259b8e83ec64aad1a77aa19485837553cf70ec5d50a0",
+      "references": [
+        {
+          "source_document": "ch05.md",
+          "line": 603,
+          "figure": "5.2",
+          "source_caption": "***Figure 5.2*** *The output produced when Example 5.1 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image32.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image33.png",
+      "source_sha256": "6d36920bca52ac2e157e279ad39917e423f8e471a1c0ea7ed49698106eeea4c4",
+      "references": [
+        {
+          "source_document": "ch05.md",
+          "line": 613,
+          "figure": "5.3",
+          "source_caption": "***Figure 5.3*** *The sequence of execution produced by Example 5.1*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image33.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image34.png",
+      "source_sha256": "f85b1e457c7d980d572ab15388c2723239e9fe4a8115142422b5f2612ee306a3",
+      "references": [
+        {
+          "source_document": "ch05.md",
+          "line": 629,
+          "figure": "5.4",
+          "source_caption": "***Figure 5.4*** *An example scenario where structures are sent on a queue*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image34.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image35.jpg",
+      "source_sha256": "c7d13249443ed866b0d68a6bc55142ceb44766b216673c8b97d403e473f003b4",
+      "references": [
+        {
+          "source_document": "ch05.md",
+          "line": 885,
+          "figure": "5.5",
+          "source_caption": "***Figure 5.5*** *The output produced by Example 5.2*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image35.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image36.png",
+      "source_sha256": "0ce17fb73f5a356a52274563f3d2d333bdf18278f5f76f682706b21bc207ef3b",
+      "references": [
+        {
+          "source_document": "ch05.md",
+          "line": 897,
+          "figure": "5.6",
+          "source_caption": "***Figure 5.6*** *The sequence of execution produced by Example 5.2*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image36.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image37.jpg",
+      "source_sha256": "c470339a732c32937fa4e00b883ca1dee66f1fcd208d543ddf5a942ae479c2d5",
+      "references": [
+        {
+          "source_document": "ch05.md",
+          "line": 1677,
+          "figure": "5.7",
+          "source_caption": "***Figure 5.7*** *The output produced when Example 5.3 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image37.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image38.png",
+      "source_sha256": "1f88ae480e8d5448699a6686c9834218fe399b43e7606018125829d4caf81995",
+      "references": [
+        {
+          "source_document": "ch06.md",
+          "line": 116,
+          "figure": "6.1",
+          "source_caption": "***Figure 6.1*** *The difference in behavior between one-shot and auto-reload software timers*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image38.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image39.png",
+      "source_sha256": "3f2567288fd7bbf663188ed54f195b01acd088d5a6a4be2ff58f49ad49da6bdb",
+      "references": [
+        {
+          "source_document": "ch06.md",
+          "line": 163,
+          "figure": "6.2",
+          "source_caption": "***Figure 6.2*** *Auto-reload software timer states and transitions*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image39.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image40.png",
+      "source_sha256": "e1ba81bf4e7c85855717bcfacc2a55efe77d192561f1f6a4196688be139b412a",
+      "references": [
+        {
+          "source_document": "ch06.md",
+          "line": 166,
+          "figure": "6.3",
+          "source_caption": "***Figure 6.3*** *One-shot software timer states and transitions*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image40.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image41.png",
+      "source_sha256": "40fbaa49e24318e92f6cdc432a21cffa190c0eb939497b651747d4062122a3b3",
+      "references": [
+        {
+          "source_document": "ch06.md",
+          "line": 250,
+          "figure": "6.4",
+          "source_caption": "***Figure 6.4*** *The timer command queue being used by a software timer API function to communicate with the RTOS daemon task*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image41.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image42.png",
+      "source_sha256": "4a4b863d9cb87760b33f07223441d7fa9fc49cd8e38acae8dedfa788d8e1c87d",
+      "references": [
+        {
+          "source_document": "ch06.md",
+          "line": 271,
+          "figure": "6.5",
+          "source_caption": "***Figure 6.5*** *The execution pattern when the priority of a task calling xTimerStart() is above the priority of the daemon task*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image42.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image43.png",
+      "source_sha256": "e5c14a9d10205706907224681fae1f6c2a55d92f5bcda7124b706ad8d5f98b54",
+      "references": [
+        {
+          "source_document": "ch06.md",
+          "line": 342,
+          "figure": "6.6",
+          "source_caption": "***Figure 6.6*** *The execution pattern when the priority of a task calling xTimerStart() is below the priority of the daemon task*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image43.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image44.jpg",
+      "source_sha256": "a22389c92adad34529e16e7ae1f46560c50f5a283da22045e3f34168e1ae4bc2",
+      "references": [
+        {
+          "source_document": "ch06.md",
+          "line": 716,
+          "figure": "6.7",
+          "source_caption": "***Figure 6.7*** *The output produced when Example 6.1 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image44.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image45.jpg",
+      "source_sha256": "586c7b6d0b9634a396af684b32d693bb01dfda868a979f156d9a2e49de1d401e",
+      "references": [
+        {
+          "source_document": "ch06.md",
+          "line": 900,
+          "figure": "6.8",
+          "source_caption": "***Figure 6.8*** *The output produced when Example 6.2 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image45.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image46.png",
+      "source_sha256": "62b9f41509ad08c063054125c5cb96d33549dc28ce0b91bff6f5c048f60fa07a",
+      "references": [
+        {
+          "source_document": "ch06.md",
+          "line": 1083,
+          "figure": "6.9",
+          "source_caption": "***Figure 6.9*** *Starting and resetting a software timer that has a period of 6 ticks*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image46.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image47.jpg",
+      "source_sha256": "8716d051ae760d7be6cd6702e96424ab59db3a1244f0662fc028a7c32b1ebc13",
+      "references": [
+        {
+          "source_document": "ch06.md",
+          "line": 1326,
+          "figure": "6.10",
+          "source_caption": "***Figure 6.10*** *The output produced when Example 6.3 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image47.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image48.png",
+      "source_sha256": "929938cd79bb4aa6745bfbbb7f2536b18eb36f9374fbe33b84ab79e803ec59e3",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 346,
+          "figure": "7.1",
+          "source_caption": "***Figure 7.1*** *Completing interrupt processing in a high priority task*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image48.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image49.png",
+      "source_sha256": "afcabdaec7a21f2f8b8cbf4eaf2c2594203958f297d4af7bd21f838bf8e06a1e",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 410,
+          "figure": "7.2",
+          "source_caption": "***Figure 7.2*** *Using a binary semaphore to implement deferred interrupt processing*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image49.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image50.png",
+      "source_sha256": "69d06591189f1b8f758fed3edd6e2f183c11a365b9efd728b77c3dadcf29279f",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 449,
+          "figure": "7.3",
+          "source_caption": "***Figure 7.3*** *Using a binary semaphore to synchronize a task with an interrupt*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image50.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image51.jpg",
+      "source_sha256": "d3df7a9c36755e99ed26959aacaa6dc6484c8867d927910319fa574237fa96f4",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 829,
+          "figure": "7.4",
+          "source_caption": "***Figure 7.4*** *The output produced when Example 7.1 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image51.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image52.png",
+      "source_sha256": "a0bc52597f3710ce07e9061121340c96e2a8950e4ac3d139682e8ecd979ba201",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 832,
+          "figure": "7.5",
+          "source_caption": "***Figure 7.5*** *The sequence of execution when Example 7.1 is executed*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image52.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image53.png",
+      "source_sha256": "3a1d326b71e8a15b8311122f6df3ac42ca2ec065e15de11179553d995f4694d8",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 874,
+          "figure": "7.6",
+          "source_caption": "***Figure 7.6*** *The scenario when one interrupt occurs before the task has finished processing the first event*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image53.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image54.png",
+      "source_sha256": "e5641c29d41a3ab828373499ab80e544f48ab47a34787448a5482ac36e77ddd6",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 877,
+          "figure": "7.7",
+          "source_caption": "***Figure 7.7*** *The scenario when two interrupts occur before the task has finished processing the first event*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image54.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image55.png",
+      "source_sha256": "f6f11d9023030c9dedf694cca8c2fad03e3674b1f0a1c0ae45d1f0520a1142af",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 1023,
+          "figure": "7.8",
+          "source_caption": "***Figure 7.8*** *Using a counting semaphore to 'count' events*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image55.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image56.jpg",
+      "source_sha256": "62187bc4d18cec083fa7e71f81ae9194664df35b5c27512ecbe74c8dc1f5e321",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 1162,
+          "figure": "7.9",
+          "source_caption": "***Figure 7.9*** *The output produced when Example 7.2 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image56.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image57.jpg",
+      "source_sha256": "c3c75d210fb2b1c474304cf758caa1f8c720a023a0b828cb88e633fb502d8991",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 1455,
+          "figure": "7.10",
+          "source_caption": "***Figure 7.10*** *The output produced when Example 7.3 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image57.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image58.png",
+      "source_sha256": "9faa1ffcf0be14bbe8b45a2be04472247b9a0f90caf3eb38b79f5b8ff2ba509d",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 1458,
+          "figure": "7.11",
+          "source_caption": "***Figure 7.11*** *The sequence of execution when Example 7.3 is executed*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image58.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image59.jpg",
+      "source_sha256": "a585664412de7083a962869dc4eccb4f780b9f1522d983af7420f5d5bc23dc49",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 1800,
+          "figure": "7.12",
+          "source_caption": "***Figure 7.12*** *The output produced when Example 7.4 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image59.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image60.png",
+      "source_sha256": "0a90685429ab57c672ff97ae04fe2b088428da75829e3845c87ab8e64fc6b9b1",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 1803,
+          "figure": "7.13",
+          "source_caption": "***Figure 7.13*** *The sequence of execution produced by Example 7.4*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image60.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image61.png",
+      "source_sha256": "6abc8cce5235b89f599b26d9c05b1a9f94a6ea69141333ce924c4002c18e13ce",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 1888,
+          "figure": "7.14",
+          "source_caption": "***Figure 7.14*** *Constants affecting interrupt nesting behavior*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image61.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image62.png",
+      "source_sha256": "68fe0020ef4503abf19e225f56a94fe7f8964b571fff9c629797f42d7ed156d5",
+      "references": [
+        {
+          "source_document": "ch07.md",
+          "line": 1946,
+          "figure": "7.15",
+          "source_caption": "***Figure 7.15*** *How a priority of binary 101 is stored by a Cortex-M microcontroller that implements four priority bits*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image62.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image63.png",
+      "source_sha256": "63f2f56e748eeeba2ab618a543c455bc83fc0388bac3c7f914c543e3397bb4e3",
+      "references": [
+        {
+          "source_document": "ch08.md",
+          "line": 472,
+          "figure": "8.1",
+          "source_caption": "***Figure 8.1*** *Mutual exclusion implemented using a mutex*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image63.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image64.jpg",
+      "source_sha256": "de64c16c7fddca05b63db4922afdc89eef086c89efef143d20cc9d54e59bb526",
+      "references": [
+        {
+          "source_document": "ch08.md",
+          "line": 667,
+          "figure": "8.2",
+          "source_caption": "***Figure 8.2*** *The output produced when Example 8.1 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image64.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image65.png",
+      "source_sha256": "e7e2e5080b0f6cc62b6aa65f520534d84c1b5c8ac3ac4bf16f9818eca5ef4388",
+      "references": [
+        {
+          "source_document": "ch08.md",
+          "line": 679,
+          "figure": "8.3",
+          "source_caption": "***Figure 8.3*** *A possible sequence of execution for Example 8.1*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image65.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image66.png",
+      "source_sha256": "93c515b51c97ff35abebe0e9ffaa4dda87c46c4cacbd7f6027cb892e9a783a54",
+      "references": [
+        {
+          "source_document": "ch08.md",
+          "line": 704,
+          "figure": "8.4",
+          "source_caption": "***Figure 8.4*** *A worst case priority inversion scenario*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image66.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image67.png",
+      "source_sha256": "6d1e54712bec210c3fc43a963b1ad8906205629366dfc0fc1d6acbcd6b37ffd5",
+      "references": [
+        {
+          "source_document": "ch08.md",
+          "line": 735,
+          "figure": "8.5",
+          "source_caption": "***Figure 8.5*** *Priority inheritance minimizing the effect of priority inversion*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image67.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image68.png",
+      "source_sha256": "d8cde3e5694ee4a7d093d98219889a1a31cb94775638c0293ee59c4c07e25e4a",
+      "references": [
+        {
+          "source_document": "ch08.md",
+          "line": 938,
+          "figure": "8.6",
+          "source_caption": "***Figure 8.6*** *A possible sequence of execution when tasks that have the same priority use the same mutex*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image68.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image69.png",
+      "source_sha256": "65dea70c57a4f087f2507f976f62daa9e6e509e222c8d21b608b8b057ed1f201",
+      "references": [
+        {
+          "source_document": "ch08.md",
+          "line": 1009,
+          "figure": "8.7",
+          "source_caption": "***Figure 8.7*** *A sequence of execution that could occur if two instances of the task shown by Listing 8.15 are created at the same priority*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image69.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image70.jpg",
+      "source_sha256": "b55b6ae934278330e5c43ba425aa8dfa8730694a3e21c61c65abf8fcb14c18af",
+      "references": [
+        {
+          "source_document": "ch08.md",
+          "line": 1312,
+          "figure": "8.8",
+          "source_caption": "***Figure 8.8*** *The output produced when Example 8.2 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image70.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image71.png",
+      "source_sha256": "175d8211cd8d8bde880fa65ad8e70e9975ee2cbed5fa30c8cf0f8156402c2811",
+      "references": [
+        {
+          "source_document": "ch09.md",
+          "line": 79,
+          "figure": "9.1",
+          "source_caption": "***Figure 9.1*** *Event flag to bit number mapping in a variable of type EventBits\\_t*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image71.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image72.png",
+      "source_sha256": "45eb1f6018b912a349f617c034988577512c62b3887ae2077dd3bddf7f41250d",
+      "references": [
+        {
+          "source_document": "ch09.md",
+          "line": 93,
+          "figure": "9.2",
+          "source_caption": "***Figure 9.2*** *An event group in which only bits 1, 4 and 7 are set, and all the other event flags are clear, making the event group's value 0x92*"
+        }
+      ],
+      "kind": "numeric-diagram",
+      "target_path": "media/image72.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image73.jpg",
+      "source_sha256": "1ff01a13e250f6c3f25090052d474ed6e45cc1ddb31cbbf3c09a839b392f1e91",
+      "references": [
+        {
+          "source_document": "ch09.md",
+          "line": 776,
+          "figure": "9.3",
+          "source_caption": "***Figure 9.3*** *The output produced when Example 9.1 is executed with xWaitForAllBits set to pdFALSE*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image73.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image74.jpg",
+      "source_sha256": "bd9cd16c24481c6a14be750de45d1b710d029b2ea1afb4d4b17c76c19713a843",
+      "references": [
+        {
+          "source_document": "ch09.md",
+          "line": 791,
+          "figure": "9.4",
+          "source_caption": "***Figure 9.4*** *The output produced when Example 9.1 is executed with xWaitForAllBits set to pdTRUE*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image74.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image75.jpg",
+      "source_sha256": "f4953becc05a5d780cc1dafabedb77b082eabaa778589f3409d061b6c74ad753",
+      "references": [
+        {
+          "source_document": "ch09.md",
+          "line": 1171,
+          "figure": "9.5",
+          "source_caption": "***Figure 9.5*** *The output produced when Example 9.2 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image75.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image76.png",
+      "source_sha256": "d011d38f3df8a585a0605abfe5ece1e1a5b89d8ae72f7d0764432af5f81a934a",
+      "references": [
+        {
+          "source_document": "ch10.md",
+          "line": 25,
+          "figure": "10.1",
+          "source_caption": "***Figure 10.1*** *A communication object being used to send an event from one task to another*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image76.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image77.png",
+      "source_sha256": "e28618c6ef8bac28b41deeb5d9f3a0d7d6a833d47d407e39b743789a6d837a47",
+      "references": [
+        {
+          "source_document": "ch10.md",
+          "line": 40,
+          "figure": "10.2",
+          "source_caption": "***Figure 10.2*** *A task notification used to send an event directly from one task to another*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image77.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image78.png",
+      "source_sha256": "2a58c26eae20ac57d550b6f7582cee04fe465fd0c3b06e9915a149fb4d71b646",
+      "references": [
+        {
+          "source_document": "ch10.md",
+          "line": 494,
+          "figure": "10.3",
+          "source_caption": "***Figure 10.3*** *The output produced when Example 7.1 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image78.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image79.png",
+      "source_sha256": "ac237dba0aa805fb55e8735e692e144a433a78f9164757c48533036887c83daf",
+      "references": [
+        {
+          "source_document": "ch10.md",
+          "line": 497,
+          "figure": "10.4",
+          "source_caption": "***Figure 10.4*** *The sequence of execution when Example 10.1 is executed*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image79.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image80.jpg",
+      "source_sha256": "62187bc4d18cec083fa7e71f81ae9194664df35b5c27512ecbe74c8dc1f5e321",
+      "references": [
+        {
+          "source_document": "ch10.md",
+          "line": 605,
+          "figure": "10.5",
+          "source_caption": "***Figure 10.5*** *The output produced when Example 10.2 is executed*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image80.jpg",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image81.png",
+      "source_sha256": "b7cea1fd7ab5d711c81cf3097bff8e349c7187366b24be520c219402fa54d52c",
+      "references": [
+        {
+          "source_document": "ch10.md",
+          "line": 1352,
+          "figure": "10.6",
+          "source_caption": "***Figure 10.6*** *The communication paths from the application tasks to the cloud server, and back again*"
+        }
+      ],
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image81.ko.png",
+      "status": "pending",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image82.png",
+      "source_sha256": "79efdd9cad9ffbcb237e9f64004b8af8252d909a76c7d8edc7c782028d6286b2",
+      "references": [
+        {
+          "source_document": "ch12.md",
+          "line": 137,
+          "figure": "12.1",
+          "source_caption": "***Figure 12.1*** *FreeRTOS+Trace includes more than 20 interconnected views*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image82.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image83.png",
+      "source_sha256": "86b3286203887b88efbc1032611408c28dcc346764d57e5a12525e132d335e7f",
+      "references": [
+        {
+          "source_document": "ch12.md",
+          "line": 140,
+          "figure": "12.2",
+          "source_caption": "***Figure 12.2*** *FreeRTOS+Trace main trace view - one of more than 20 interconnected trace views*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image83.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image84.png",
+      "source_sha256": "d17dd2ef1d79cdb769f1cf35c5638906997a421ff4a0337a7e11cc1adadbeb9e",
+      "references": [
+        {
+          "source_document": "ch12.md",
+          "line": 143,
+          "figure": "12.3",
+          "source_caption": "***Figure 12.3*** *FreeRTOS+Trace CPU load view - one of more than 20 interconnected trace views*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image84.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image85.png",
+      "source_sha256": "98aa6c94e19018cf8a00fe1c1338dbef023e6f1082543b1bef3297aa99c2974c",
+      "references": [
+        {
+          "source_document": "ch12.md",
+          "line": 146,
+          "figure": "12.4",
+          "source_caption": "***Figure 12.4*** *FreeRTOS+Trace response time view - one of more than 20 interconnected trace views*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image85.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image86.png",
+      "source_sha256": "db8d20b8424338a4df162175ca0aa1f415f8eb65bcf1c7739abb0db16e61f97f",
+      "references": [
+        {
+          "source_document": "ch12.md",
+          "line": 149,
+          "figure": "12.5",
+          "source_caption": "***Figure 12.5*** *FreeRTOS+Trace user event plot view - one of more than 20 interconnected trace views*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image86.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image87.png",
+      "source_sha256": "057c9158cdab0102da615a39bd738cb691297960746f3e524f3960ee4db73c26",
+      "references": [
+        {
+          "source_document": "ch12.md",
+          "line": 152,
+          "figure": "12.6",
+          "source_caption": "***Figure 12.6*** *FreeRTOS+Trace kernel object history view - one of more than 20 interconnected trace views*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image87.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image88.png",
+      "source_sha256": "8944ac895c2fca2f38c21fcaa2b47e76c8cef124f8eeb5ff5ba0d2c09668da53",
+      "references": [
+        {
+          "source_document": "ch12.md",
+          "line": 517,
+          "figure": "12.7",
+          "source_caption": "***Figure 12.7*** *Example output generated by vTaskListTasks()*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image88.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image89.png",
+      "source_sha256": "103aa2408b0d4ce1e48a72dc870c3ac72de22c9ae2f45005601b04ccd7dc6b76",
+      "references": [
+        {
+          "source_document": "ch12.md",
+          "line": 599,
+          "figure": "12.8",
+          "source_caption": "***Figure 12.8*** *Example output generated by vTaskGetRunTimeStatistics()*"
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image89.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image90.png",
+      "source_sha256": "1cf164f35a25bc1eb6835615efeadc910e9a90d646cd417394f8aa523fd06a9f",
+      "references": [
+        {
+          "source_document": "ch12.md",
+          "line": 900,
+          "figure": null,
+          "source_caption": ""
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image90.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    },
+    {
+      "source_path": "media/image91.png",
+      "source_sha256": "c848407204ba6ede048e1ef4fafac61e81ee1e28d6c71a126939aabdf1f5eaff",
+      "references": [
+        {
+          "source_document": "ch13.md",
+          "line": 51,
+          "figure": null,
+          "source_caption": ""
+        }
+      ],
+      "kind": "screenshot",
+      "target_path": "media/image91.png",
+      "status": "preserve-original",
+      "method": null,
+      "prompt": null,
+      "review": null
+    }
+  ]
+}
