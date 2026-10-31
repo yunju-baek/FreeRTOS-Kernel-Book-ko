@@ -29,4 +29,5 @@ Codex에서 `ko/assets/`에 한국어 그림을 준비하고 있다. 파일별 �
 
 - **ch01.md (1 머리말)**: 번역 및 `source-checked` 검수 완료 (`ko/ch01.md`). 제목은 사용자 요청에 따라 `한글(영어)` 병기 형식을 적용하고 영문 원본 앵커 ID를 보존함.
 - **ch02.md (2 FreeRTOS 커널 배포판)**: 번역 및 `source-checked` 검수 완료 (`ko/ch02.md`). 디렉터리 트리, Listing 2.1 코드 템플릿, 표 1~4, 한글(영어) 병기 제목 및 영문 앵커 ID 적용 완료.
-- **다음 시작점**: `ch03.md` (3 Heap Memory Management) 번역 착수.
+- **ch03.md (3 힙 메모리 관리)**: 번역 및 `source-checked` 검수 완료 (`ko/ch03.md`). heap_1~heap_5 상세 설명, C 코드 Listing 3.1~3.15, 한글(영어) 병기 제목 및 영문 앵커 ID 적용 완료. 그림 3.1~3.4는 `assets/image05.ko.png`~`image08.ko.png`로 연결하였으며 Codex 이미지 병행 작업 완료 후 시각적 표시 검수 예정 (`needs-image-check`).
+- **다음 시작점**: `ch04.md` (4 Task Management) 번역 착수.
