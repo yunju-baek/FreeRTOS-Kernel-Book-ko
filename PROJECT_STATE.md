@@ -38,4 +38,5 @@ Codex에서 `ko/assets/`에 한국어 그림을 준비하고 있다. 파일별 �
 - **ch09.md (9 이벤트 그룹)**: 번역 및 `source-checked` 검수 완료 (`ko/ch09.md`). 16개 헤딩 `한글(영어)` 병기, 14개 Listing 코드 100% 보존, Figure 9.1~9.5 자산 링크 매핑 완료, 각주 `[^24]`~`[^26]` (3개) 보존 완료 (`needs-image-check`).
 - **ch10.md (10 태스크 알림)**: 번역 및 `source-checked` 검수 완료 (`ko/ch10.md`). 20개 헤딩 `한글(영어)` 병기, 18개 Listing 코드 100% 보존, Figure 10.1~10.6 자산 링크 매핑 완료 (`needs-image-check`).
 - **ch11.md (11 저전력 지원)**: 번역 및 `source-checked` 검수 완료 (`ko/ch11.md`). 11개 헤딩 `한글(영어)` 병기, 7개 Listing 코드 100% 보존 완료.
-- **다음 시작점**: `ch12.md` (12 Developer Support) 번역 착수.
+- **ch12.md (12 개발자 지원)**: 번역 및 `source-checked` 검수 완료 (`ko/ch12.md`). 20개 헤딩 `한글(영어)` 병기, 12개 Listing 코드 100% 보존, Figure 12.1~12.8 및 디버거 스크린샷 매핑 완료.
+- **다음 시작점**: `ch13.md` (13 Troubleshooting) 번역 착수.
