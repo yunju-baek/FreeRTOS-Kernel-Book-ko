@@ -149,10 +149,56 @@
       "source_path": "ch04.md",
       "source_blob_sha": "8718e30fac4eb8d74d57cdc20b4594f000e257ee",
       "translation_path": "ko/ch04.md",
-      "status": "not-started",
-      "translated_sections": [],
-      "translated_at": null,
-      "reviews": []
+      "status": "source-checked",
+      "translated_sections": [
+        "4.1.1",
+        "4.2",
+        "4.3",
+        "4.4",
+        "4.4.1",
+        "4.5",
+        "4.5.1",
+        "4.5.2",
+        "4.6",
+        "4.7",
+        "4.7.1",
+        "4.7.2",
+        "4.7.3",
+        "4.7.4",
+        "4.7.5",
+        "4.8",
+        "4.8.1",
+        "4.8.2",
+        "4.9",
+        "4.9.1",
+        "4.9.2",
+        "4.10",
+        "4.10.1",
+        "4.11",
+        "4.11.1",
+        "4.11.2",
+        "4.11.3",
+        "4.12",
+        "4.12.1",
+        "4.12.2",
+        "4.12.3",
+        "4.12.4",
+        "4.12.5"
+      ],
+      "translated_at": "2026-11-01T09:00:04+09:00",
+      "reviews": [
+        {
+          "stage": "source-checked",
+          "reviewer": "Antigravity",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01T09:00:04+09:00",
+          "scope": "ch04.md full text",
+          "result": "pass",
+          "unresolved": [
+            "needs-image-check: Figures 4.1, 4.3, 4.4, 4.6, 4.7, 4.9, 4.10, 4.12, 4.14, 4.17, 4.18, 4.19, 4.20, 4.21, 4.22 linked to assets/...; visual check pending concurrent Codex image generation completion"
+          ]
+        }
+      ]
     },
     {
       "source_path": "ch05.md",
