@@ -9,6 +9,7 @@
 - 공식 원문: `https://github.com/FreeRTOS/FreeRTOS-Kernel-Book`, remote `upstream`
 - 영문 기준 commit: `ba20b2f820926587d5ee20ce312b3789d63f795c`; `upstream-baseline` branch와 manifest에 보존
 - 한국어 정본: `ko/`의 Markdown과 검수된 `ko/assets/`
+- 실습 연결: [FreeRTOS-Tutorials-ko](https://github.com/yunju-baek/FreeRTOS-Tutorials-ko); 첫 화면과 한국어 목차에서 연결
 - 비공식 번역임을 루트 README와 한국어 표제에 표시했다. 원문 README는 `README.upstream.md`에 보존한다.
 
 ## 완료 범위
