@@ -31,4 +31,9 @@ Codex에서 `ko/assets/`에 한국어 그림을 준비하고 있다. 파일별 �
 - **ch02.md (2 FreeRTOS 커널 배포판)**: 번역 및 `source-checked` 검수 완료 (`ko/ch02.md`). 디렉터리 트리, Listing 2.1 코드 템플릿, 표 1~4, 한글(영어) 병기 제목 및 영문 앵커 ID 적용 완료.
 - **ch03.md (3 힙 메모리 관리)**: 번역 및 `source-checked` 검수 완료 (`ko/ch03.md`). heap_1~heap_5 상세 설명, C 코드 Listing 3.1~3.15, 한글(영어) 병기 제목 및 영문 앵커 ID 적용 완료. 그림 3.1~3.4는 `assets/image05.ko.png`~`image08.ko.png`로 연결하였으며 Codex 이미지 병행 작업 완료 후 시각적 표시 검수 예정 (`needs-image-check`).
 - **ch04.md (4 태스크 관리)**: 번역 및 `source-checked` 검수 완료 (`ko/ch04.md`). task 생성(xTaskCreate), 우선순위, 상태 머신(Ready/Running/Blocked/Suspended), vTaskDelay, vTaskDelayUntil, idle task hook, vTaskPrioritySet, vTaskDelete, TLS, 3가지 스케줄링 알고리즘(선점형+시분할, 시분할 없는 선점형, 협력형), 코드 Listing 4.1~4.30 100% 보존 완료. 그림 4.1~4.22 자산 링크 연결 완료 (`needs-image-check`).
-- **다음 시작점**: `ch05.md` (5 Queue Management) 번역 착수.
+- **ch05.md (5 큐 관리)**: 번역 및 `source-checked` 검수 완료 (`ko/ch05.md`). 28개 헤딩 `한글(영어)` 병기, 32개 Listing 코드 100% 보존, Figure 5.1~5.7 자산 링크 매핑 완료 (`needs-image-check`).
+- **ch06.md (6 인터럽트 관리)**: 번역 및 `source-checked` 검수 완료 (`ko/ch06.md`). 22개 헤딩 `한글(영어)` 병기, 16개 Listing 코드 100% 보존, Figure 6.1~6.10 자산 링크 매핑 완료, 각주 `[^10]`, `[^11]` 보존 완료 (`needs-image-check`).
+- **ch07.md (7 소프트웨어 타이머 관리)**: 번역 및 `source-checked` 검수 완료 (`ko/ch07.md`). 25개 헤딩 `한글(영어)` 병기, 24개 Listing 코드 100% 보존, Figure 7.1~7.15 자산 링크 매핑 완료, 각주 `[^12]`~`[^22]` (11개) 보존 완료 (`needs-image-check`).
+- **ch08.md (8 자원 관리)**: 번역 및 `source-checked` 검수 완료 (`ko/ch08.md`). 18개 헤딩 `한글(영어)` 병기, 21개 Listing 코드 100% 보존, Figure 8.1~8.8 자산 링크 매핑 완료, 각주 `[^23]` 보존 완료 (`needs-image-check`).
+- **ch09.md (9 이벤트 그룹)**: 번역 및 `source-checked` 검수 완료 (`ko/ch09.md`). 16개 헤딩 `한글(영어)` 병기, 14개 Listing 코드 100% 보존, Figure 9.1~9.5 자산 링크 매핑 완료, 각주 `[^24]`~`[^26]` (3개) 보존 완료 (`needs-image-check`).
+- **다음 시작점**: `ch10.md` (10 Task Notifications) 번역 착수.
