@@ -1,70 +1,56 @@
-# 한국어판 작업 절차
+# 한국어판 수정·검수 절차
 
-이 문서는 별도 번역 작업을 시작할 때 사용한다. 본문 번역 요청이 있기 전에는 지침·원문·asset 준비 상태를 유지한다.
+정본은 [yunju-baek/FreeRTOS-Kernel-Book-ko](https://github.com/yunju-baek/FreeRTOS-Kernel-Book-ko)의 `main`이다. 이미 번역된 본문 13장과 부속 문서 5종을 이 기준에서 수정한다. 원문 갱신과 번역 교정은 별도 변경으로 관리한다.
 
-그림 작업과 동시에 본문을 번역할 때는 이미 준비된 별도 worktree와 [병행 번역 인계](IMAGE_HANDOFF.md)의 지시문을 사용한다.
+## 1. 시작과 범위
 
-## 1. 작업 입력
+1. `AGENTS.md`, `PROJECT_STATE.md`, `STYLE_GUIDE.md`, `GLOSSARY.md`, `SOURCE_NOTES.md`를 읽는다.
+2. Git 상태와 작업 branch를 확인한다. 미커밋 변경이 있으면 보존하고 작업을 겹치지 않는다.
+3. `origin/main`을 fetch한 뒤 해당 기준에서 `review/<범위>` 또는 `translate/<범위>` branch를 만든다. 사용 중인 다른 worktree의 branch는 바꾸지 않는다.
+4. `translation-manifest.json`의 원문 commit·blob을 확인한다. `upstream`을 fetch했다는 이유로 기준 commit을 자동 갱신하지 않는다.
 
-- 원문: `translation-manifest.json`에 기록한 commit의 해당 파일과 blob
-- 범위: 장 전체 또는 정확한 절 번호·시작/끝 문단
-- 출력: 대응하는 `ko/chNN.md` 등
-- 기준: `STYLE_GUIDE.md`와 `GLOSSARY.md`의 버전
-- 문맥: 앞뒤 문단, 해당 장에서 이미 풀이를 병기한 용어
-- 그림: `assets/manifest.json`의 원본–한국어 asset 대응과 검수 상태
+## 2. 편집
 
-초기 표본 후보는 4.7절 상태 설명과 5.3절 API 설명이다. 사용자가 다른 범위를 지정하면 그 범위를 따른다. 표본 번역이 장 전체 완료를 뜻하지 않는다.
+원문 파일은 그대로 두고 `ko/`의 대응 파일만 수정한다. 코드·주석·문자열·로그와 기술 조건·단위·숫자를 보존한다. 원문 밖의 설명은 `[옮긴이 주]`로 구분한다. 원문 오류를 바로잡을 때는 `SOURCE_NOTES.md`에 원래 표현과 판단 근거를 함께 적는다.
 
-## 2. 준비와 작성
+그림은 `assets/manifest.json`의 검수된 `target_path`를 사용한다. 그림 변경은 원본 대조와 hash·검수 기록을 포함한다. 설명 도표의 한국어 문구를 검수하며, 실행 로그·실제 화면·로고의 원본 문자열을 임의 번역하지 않는다.
 
-1. `git status`, 현재 branch, 원문 commit과 blob을 확인한다. 준비 지침이 들어 있는 branch에서 `translate/ch04-states`처럼 범위를 드러내는 branch를 만든다.
-2. 해당 원문을 읽고 용어·코드·조건·번호·그림의 대응을 확인한다. 원문 파일을 수정하지 않는다.
-3. 지정한 범위만 한국어로 옮긴다. 미번역 절을 빈 제목으로 채우거나 완성된 장처럼 보이게 하지 않는다.
-4. 원문 밖의 설명은 `[옮긴이 주]`로 분리하고 출처를 단다. 의심 항목에는 원문 위치와 판단 근거를 남긴다.
-5. 그림은 검수된 한국어 asset을 연결한다. 코드·로그·실제 화면이 보존된 경우 대응 한국어 설명을 함께 사용한다. caption·alt·그림 번호도 대조한다.
-
-## 3. 검수와 기록
-
-1. 구조·내용: 문단·조건·예외·부정·비교·수치·단위·예제 번호를 원문과 대조한다.
-2. 코드: fenced/indented/HTML 코드, API·설정·형·파일명·로그를 글자 단위로 대조한다. 코드 주석도 보존한다.
-3. 문체: 한다체, 대표 용어, 첫 병기, 주체·동작·시점을 검토한다.
-4. 그림: 번역 문구, 유지할 문자열, 도형·화살표·축·시간·값의 대응을 원본과 직접 비교한다. 생성 도구의 성공 응답만으로 통과시키지 않는다.
-5. 연결·표시: 상대 경로, 영문 anchor, 목차, 이미지 비율, 표·코드의 실제 렌더링을 확인한다.
-6. 상태: manifest의 `status`, `translated_sections`, `translated_at`, `reviews`를 실제 결과에 맞춰 갱신한다. review 항목에는 `stage`, `reviewer`, `reviewer_kind`, `date`, `scope`, `result`, `unresolved`를 기록한다.
-7. 변경 목록: upstream 원본이 변하지 않았는지 확인하고 지정된 파생 파일만 commit한다. 현재 상태와 남은 검토를 `PROJECT_STATE.md`에 기록한다.
-
-`draft`는 작성, `source-checked`는 원문 대조, `language-reviewed`는 한국어 검토, `release-ready`는 출처·라이선스·표시·미해결 사항까지 배포 요건을 확인한 상태다. 검토자가 Codex라면 `reviewer_kind: agent`로 기록한다. 사람의 검토가 필요한 항목은 `needs-human-check`로 남긴다.
-
-원문 commit을 바꾸면 변경된 source blob에 대응하는 번역·그림을 다시 검토한다. 이전 검수 결과를 새 원문에 자동 적용하지 않는다.
-
-## 4. 후속 작업 요청 양식
-
-```text
-FreeRTOS-Kernel-Book-ko의 AGENTS.md와 PROJECT_STATE.md를 먼저 읽는다.
-ko/STYLE_GUIDE.md, ko/GLOSSARY.md, ko/WORKFLOW.md를 적용한다.
-
-작업: 한국어 본문 번역
-원문 commit: ba20b2f820926587d5ee20ce312b3789d63f795c
-대상 파일: <chNN.md>
-대상 범위: <장 전체 또는 정확한 절·문단 범위>
-출력 파일: <ko/chNN.md>
-
-영문 원본과 코드를 보존한다. 지정한 범위만 번역하고 문체를 이유로
-조건·예외·부정·수치·단위를 생략하지 않는다. 그림은 ko/assets의 검수된
-대응 asset을 사용하고 caption·alt와 원문 번호를 대조한다.
-원문 대조·한국어 검토·링크·그림 검사를 수행하고 실제 검토자를 기록한다.
-불확실한 항목은 위치·근거와 함께 별도로 보고한다.
-manifest와 PROJECT_STATE.md에 실제 완료 범위 및 미해결 사항을 기록한다.
-```
-
-## 5. 원문 보존 확인
-
-다음은 원문에 대한 수정·삭제·이름 변경·형 변경을 확인하는 읽기 전용 검사다. 한국어 준비 파일처럼 새로 추가한 파일은 결과에서 제외한다.
+## 3. 검수
 
 ```sh
-git diff --name-status --diff-filter=CDMRTUXB ba20b2f820926587d5ee20ce312b3789d63f795c -- .
-git submodule status --recursive
-git submodule foreach --recursive 'git status --porcelain'
+python3 tools/verify_translation.py --report publish/translation-validation.json
 ```
 
-첫 명령이 비어 있고 submodule이 기록된 commit에서 clean하더라도 번역 내용·그림의 정확성과 예제 실행을 검증한 것은 아니다. 각 검수 결과를 따로 기록한다.
+저장소 루트에서 실행한다. 원문 249개 파일의 보존, manifest의 원문 blob, 코드 블록, 제목 구조·번호, caption·각주·anchor, 로컬 링크, 그림 매핑과 hash를 검사한다. 원문 README는 `README.upstream.md`와 대조한다. 이 검사는 번역 의미, 외부 URL의 현재 응답, 예제 실행을 보증하지 않는다.
+
+내용 검수에서는 조건·예외·부정·수치·단위·우선순위 방향·호출 문맥을 원문과 대조한다. 문체 검수에서는 한다체, 객체명, 첫 병기와 불필요한 직역을 확인한다. 표·코드·그림을 포함한 실제 표시도 확인한다.
+
+선택적인 HTML 검수본은 pandoc 설치 후 다음 명령으로 생성한다. 결과는 `publish/review/`에 저장되며 Git에서 제외한다.
+
+```sh
+python3 tools/render_review.py
+python3 -m http.server 8765 --bind 127.0.0.1
+```
+
+`http://127.0.0.1:8765/publish/review/toc.html`을 연다. PDF·예제 빌드·실보드 실행은 요청과 실제 수행 범위에 따라 별도로 기록한다.
+
+## 4. 기록과 반영
+
+- manifest의 review에는 검토자·종류·날짜·실제 범위·결과·미해결 사항을 기록한다. 과거 검수 기록을 현재 검수 결과로 오인하지 않게 한다.
+- 상태는 `not-started → draft → source-checked → language-reviewed → release-ready`다. 부분 교정이나 자동 검사만으로 다음 단계 전체를 완료했다고 표시하지 않는다.
+- 관련 파일만 명시적으로 stage하고 commit한 뒤 `origin`의 작업 branch로 push한다. 한국어판 저장소에 PR을 만든다. 사용자 승인 또는 저장소의 명시적 병합 규칙에 따라 `main`에 반영한다.
+- 최초 공개 이후에도 원문 대조 사항은 유지한다. 사람의 전수 교열, 예제 실행, 원저자 확인 결과가 생기면 그 사실만 추가한다.
+
+## 후속 작업 지시문
+
+```text
+FreeRTOS-Kernel-Book-ko의 AGENTS.md와 PROJECT_STATE.md를 읽는다.
+ko/STYLE_GUIDE.md, ko/GLOSSARY.md, ko/WORKFLOW.md를 적용한다.
+origin/main에서 작업 branch를 만든다.
+대상: <파일·절과 수정 목적>
+원문 기준은 ko/translation-manifest.json을 따른다.
+영문 원본·코드·로그를 보존하고 ko/만 수정한다.
+원문 오류는 ko/SOURCE_NOTES.md와 본문의 옮긴이 주로 구분한다.
+구조 검사와 내용·표시 검수를 수행하고 실제 범위만 기록한다.
+수정 파일을 commit/push하고 한국어판 저장소의 PR 주소를 보고한다.
+```

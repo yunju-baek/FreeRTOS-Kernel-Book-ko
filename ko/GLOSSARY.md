@@ -1,6 +1,6 @@
 # FreeRTOS Kernel Book 영문 용어·한국어 풀이집
 
-버전: v0.2 · 갱신일: 2026-11-01
+버전: v0.3 · 갱신일: 2026-11-01
 
 용도: [번역 지침](STYLE_GUIDE.md)의 대표 표기 목록. 공식 한국어 표준 용어집은 아니다.
 
@@ -89,6 +89,7 @@
 | reentrant | 재진입 가능한 | reentrant | 한국어 |
 | thread-safe | 스레드 안전한 | thread-safe. 재진입 가능성과 별도로 검토 | 한국어 |
 | gatekeeper task | gatekeeper task | 공유 자원 접근을 전담하는 task | 영문 유지 |
+| timer command queue | timer command queue | 타이머 명령 큐 | 영문 유지 |
 | software timer | software timer | 소프트웨어 타이머 | 영문 유지 |
 | timer service task / daemon task | timer service task / daemon task | 타이머 서비스 task. 원문에서 두 이름의 관계를 설명 | 영문 유지 |
 | one-shot timer | one-shot timer | 단발 타이머 | 영문 유지 |

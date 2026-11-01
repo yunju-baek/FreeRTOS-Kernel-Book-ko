@@ -1,8 +1,8 @@
 # FreeRTOS Kernel Book 한국어판 번역 지침
 
-버전: v0.2 · 갱신일: 2026-11-01
+버전: v0.3 · 갱신일: 2026-11-01
 
-상태: 이 저장소에서 후속 번역에 적용할 기준본. 한국어판 본문 번역은 아직 시작하지 않았다.
+상태: 한국어 본문·그림 통합본과 이후 교정에 적용하는 기준본. 현재 검수 범위는 REVIEW.md에 기록한다.
 
 기준 원문: [FreeRTOS-Kernel-Book](https://github.com/FreeRTOS/FreeRTOS-Kernel-Book/tree/ba20b2f820926587d5ee20ce312b3789d63f795c), commit `ba20b2f820926587d5ee20ce312b3789d63f795c`
 
@@ -35,7 +35,7 @@
 
 ## 3. 문체와 문장 구성
 
-본문은 평서형 ‘한다/이다’체, 절차는 ‘설정한다/실행한다/확인한다’체로 통일한다. 원문에 없는 독자 호명, 감탄, 대화, 난이도 평가를 추가하지 않는다. 제목은 간결한 명사구로 적고 번호는 원문대로 유지한다. 예: `4 Task 관리`, `4.7.1 Blocked 상태`.
+본문은 평서형 ‘한다/이다’체, 절차는 ‘설정한다/실행한다/확인한다’체로 통일한다. 원문에 없는 독자 호명, 감탄, 대화, 난이도 평가를 추가하지 않는다. 제목은 사용자 선택에 따라 `한국어 (영어 원제)`로 병기하고 번호는 원문대로 유지한다. 예: `4 태스크 관리 (Task Management)`. 제목·목차의 한국어 표제는 검색과 탐색을 위한 예외이며, 본문 객체명은 영어 유지 원칙을 따른다. 동일한 각주를 양쪽 제목에서 중복 호출하지 않는다.
 
 한 문장은 가능한 한 하나의 중심 판단을 담는다. 긴 영어 문장을 나눌 때 조건과 예외가 어느 동작에 적용되는지 분명히 한다. 원문의 불릿·표가 병렬 조건을 나타내면 구조를 유지한다. 문체를 정리한다는 이유로 기술적 부정이나 반복된 제한 조건을 삭제하지 않는다.
 
@@ -124,9 +124,9 @@ FreeRTOS-Kernel-Book-ko/
     assets/                      # 한국어 그림·원본 대응·검수 상태
 ```
 
-후속 번역 작업이 지정되면 `ko/chNN.md`, `ko/toc.md`, `ko/booktitle.md` 등 원문과 대응하는 파일을 만든다. 현재는 본문 파일이나 빈 번역 자리표시자를 만들지 않는다. 부분 번역을 장 전체의 완료로 기록하지 않는다.
+본문 13장과 부속 문서 5종은 `ko/chNN.md`, `ko/toc.md`, `ko/booktitle.md` 등 원문 대응 경로에 있다. 후속 변경은 지정 범위에만 적용하며 부분 검토를 장 전체의 검토 완료로 기록하지 않는다.
 
-영문 원격 이름은 `upstream`이다. `main`은 clone 시점의 영문 기준선을 유지하고 준비 작업은 `docs/ko-translation-setup` branch에 둔다. 후속 번역 branch는 지침이 들어 있는 작업 branch에서 만든다. 예제 submodule과 중첩 submodule은 초기화했다. 예제 빌드·실행 검증은 수행하지 않았다.
+영문 원격 이름은 `upstream`이고 한국어판 정본은 `origin/main`이다. 영문 기준선은 manifest와 `upstream-baseline`에 보존한다. 후속 작업 branch는 한국어판 정본에서 만든다. 예제 submodule과 중첩 submodule은 초기화했으며 예제 빌드·실행은 검증하지 않았다.
 
 지침과 용어집의 현재 기준본은 이 저장소의 `ko/` 아래 파일이다. 상위 프로젝트 `index/`의 v0.1 문서는 사전 준비 기록으로 보존하며 독립적으로 갱신하지 않는다. 기존 수집 `raw/`, 웹북, 강의·실습 자료는 별도 자료로 보존한다. HTML·PDF 등 배포 형식은 후속 지시에 따라 정한다.
 
@@ -140,8 +140,8 @@ upstream_commit: ba20b2f820926587d5ee20ce312b3789d63f795c
 source_path: ch04.md
 source_blob_sha: <해당 파일의 Git blob SHA>
 translation_path: ko/ch04.md
-style_version: 0.2
-glossary_version: 0.2
+style_version: 0.3
+glossary_version: 0.3
 status: draft
 translated_at: <실제 번역 날짜>
 reviewed_by: <실제 검토자 또는 미검토>
@@ -181,3 +181,7 @@ reviewed_by: <실제 검토자 또는 미검토>
 ```
 
 장별 작업에 앞서 대상 범위, 이미 병기한 용어, 앞뒤 문단을 함께 제공한다. 단어 치환표만으로 전체 파일을 자동번역하지 않는다.
+
+## 10. 공개 정본의 관리
+
+한국어판 `origin/main`을 기준으로 변경하고 작업 branch에서 검수 후 PR을 제출한다. 공개 여부는 검수 단계와 별개다. 공개됐다는 이유로 manifest를 `release-ready`로 올리지 않는다. 원문 오기와 번역 수정은 [원문 대조 사항](SOURCE_NOTES.md)에 기록한다. 원문 README는 `README.upstream.md`에 보존하며 루트 README는 비공식 한국어판 안내로 사용한다.

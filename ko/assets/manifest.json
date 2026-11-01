@@ -2887,5 +2887,13 @@
     "unused_originals": 4,
     "scope": "Direct visual comparison of Korean wording, identifiers, numbers and diagram semantics; source and target hashes verified",
     "remaining": "Integrated Korean book rendering and human publication review; source anomalies retained and flagged"
+  },
+  "integration_review": {
+    "date": "2026-11-01",
+    "reviewer": "Codex",
+    "reviewer_kind": "agent",
+    "scope": "82 image references in the translated book checked against target paths and hashes; rendered image loading and representative layout reviewed. See ko/REVIEW.md.",
+    "result": "pass",
+    "report": "ko/REVIEW.md"
   }
 }

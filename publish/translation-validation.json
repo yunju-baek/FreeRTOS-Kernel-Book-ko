@@ -1,0 +1,127 @@
+{
+  "result": "pass",
+  "baseline": "ba20b2f820926587d5ee20ce312b3789d63f795c",
+  "counts": {
+    "upstream_files": 249,
+    "documents": 18,
+    "code_blocks": 205,
+    "headings": 296,
+    "captions": 313,
+    "local_links": 692,
+    "image_references": 82,
+    "source_assets": 86,
+    "mapped_images": 82
+  },
+  "documents": [
+    {
+      "path": "ko/ch01.md",
+      "code_blocks": 0,
+      "headings": 10,
+      "captions": 0
+    },
+    {
+      "path": "ko/ch02.md",
+      "code_blocks": 6,
+      "headings": 22,
+      "captions": 9
+    },
+    {
+      "path": "ko/ch03.md",
+      "code_blocks": 15,
+      "headings": 27,
+      "captions": 19
+    },
+    {
+      "path": "ko/ch04.md",
+      "code_blocks": 37,
+      "headings": 35,
+      "captions": 62
+    },
+    {
+      "path": "ko/ch05.md",
+      "code_blocks": 32,
+      "headings": 28,
+      "captions": 42
+    },
+    {
+      "path": "ko/ch06.md",
+      "code_blocks": 16,
+      "headings": 22,
+      "captions": 29
+    },
+    {
+      "path": "ko/ch07.md",
+      "code_blocks": 24,
+      "headings": 25,
+      "captions": 43
+    },
+    {
+      "path": "ko/ch08.md",
+      "code_blocks": 21,
+      "headings": 18,
+      "captions": 31
+    },
+    {
+      "path": "ko/ch09.md",
+      "code_blocks": 14,
+      "headings": 16,
+      "captions": 22
+    },
+    {
+      "path": "ko/ch10.md",
+      "code_blocks": 18,
+      "headings": 20,
+      "captions": 26
+    },
+    {
+      "path": "ko/ch11.md",
+      "code_blocks": 7,
+      "headings": 11,
+      "captions": 7
+    },
+    {
+      "path": "ko/ch12.md",
+      "code_blocks": 12,
+      "headings": 20,
+      "captions": 20
+    },
+    {
+      "path": "ko/ch13.md",
+      "code_blocks": 3,
+      "headings": 20,
+      "captions": 3
+    },
+    {
+      "path": "ko/toc.md",
+      "code_blocks": 0,
+      "headings": 18,
+      "captions": 0
+    },
+    {
+      "path": "ko/booktitle.md",
+      "code_blocks": 0,
+      "headings": 3,
+      "captions": 0
+    },
+    {
+      "path": "ko/dedication.md",
+      "code_blocks": 0,
+      "headings": 0,
+      "captions": 0
+    },
+    {
+      "path": "ko/abbreviations.md",
+      "code_blocks": 0,
+      "headings": 1,
+      "captions": 0
+    },
+    {
+      "path": "ko/copyright.md",
+      "code_blocks": 0,
+      "headings": 0,
+      "captions": 0
+    }
+  ],
+  "errors": [],
+  "scope": "Structural validation only; excludes semantic certification, external URL availability, example execution and hardware testing."
+}

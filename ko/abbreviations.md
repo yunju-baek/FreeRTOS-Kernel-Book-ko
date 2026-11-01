@@ -14,7 +14,7 @@
 | ISR  | 인터럽트 서비스 루틴 (Interrupt Service Routine) |
 | LCD  | 액정 디스플레이 (Liquid Crystal Display) |
 | MCU  | 마이크로컨트롤러 (Microcontroller) |
-| RMS  | 단조 비율 스케줄링 (Rate Monotonic Scheduling) |
+| RMS  | 비율 단조 스케줄링 (Rate Monotonic Scheduling) |
 | RTOS | 실시간 운영체제 (Real-time Operating System) |
 | SIL  | 안전 무결성 수준 (Safety Integrity Level) |
 | SPI  | 직렬 주변장치 인터페이스 (Serial Peripheral Interface) |
