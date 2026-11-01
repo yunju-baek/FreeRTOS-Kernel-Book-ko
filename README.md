@@ -8,6 +8,8 @@ This is an **unofficial Korean translation** of the [FreeRTOS Kernel Book](https
 
 **[한국어 목차에서 읽기](ko/toc.md)** · [표제](ko/booktitle.md) · [약어](ko/abbreviations.md) · [영문 원본 목차](toc.md)
 
+실습으로 이어가기: **[FreeRTOS 튜토리얼 한국어판](https://github.com/yunju-baek/FreeRTOS-Tutorials-ko)** · [튜토리얼 21개 목차](https://github.com/yunju-baek/FreeRTOS-Tutorials-ko/blob/main/ko/README.md)
+
 ## 수록 내용과 검수 상태
 
 본문 13장과 부속 문서 5종을 번역했다. 설명 도표 53개를 한글화했으며, 실행 로그·실제 도구 화면·로고 등 29개는 원본을 보존하고 한국어 캡션으로 연결했다. 본문에서 사용하는 그림 82개를 모두 연결했다.

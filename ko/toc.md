@@ -1,5 +1,7 @@
 # 목차 (Table of Contents)
 
+함께 실습하기: [FreeRTOS 튜토리얼 한국어판](https://github.com/yunju-baek/FreeRTOS-Tutorials-ko) · [튜토리얼 목차](https://github.com/yunju-baek/FreeRTOS-Tutorials-ko/blob/main/ko/README.md)
+
 ## [1 머리말 (Preface)](ch01.md#1-preface)
   + [1.1 소형 임베디드 시스템에서의 멀티태스킹 (Multitasking in Small Embedded Systems)](ch01.md#11-multitasking-in-small-embedded-systems)
     + [1.1.1 FreeRTOS 커널 소개 (About the FreeRTOS Kernel)](ch01.md#111-about-the-freertos-kernel)
