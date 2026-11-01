@@ -85,7 +85,9 @@ def main():
         if not dst.exists():
             continue
         en, ko = src.read_text(), dst.read_text()
-        check(not re.match(r'\A\ufeff?---[ \t]*\r?\n[A-Za-z_][A-Za-z0-9_-]*:', ko), f'Translation page front matter: {dst.name}')
+        has_front_matter = bool(re.match(r'\A\ufeff?---[ \t]*\r?\n[A-Za-z_][A-Za-z0-9_-]*:', ko))
+        check(not has_front_matter, f'Translation page front matter: {dst.name}')
+        counts['pages_without_front_matter'] += int(not has_front_matter)
         texts[entry['translation_path']] = ko
         source_blob = hashlib.sha1(b'blob ' + str(src.stat().st_size).encode() + b'\0' + src.read_bytes()).hexdigest()
         check(source_blob == entry['source_blob_sha'], f'Manifest source blob: {src.name}')
@@ -107,7 +109,7 @@ def main():
         check(a_caps == b_caps, f'Caption order/number differs: {dst.name}')
         check(set(re.findall(r'^\[\^([^]]+)\]:', en, re.M)) <= set(re.findall(r'^\[\^([^]]+)\]:', ko, re.M)), f'Footnotes missing: {dst.name}')
         counts.update(documents=1, code_blocks=len(ac), headings=len(kh), captions=len(a_caps))
-        docs.append({'path': entry['translation_path'], 'code_blocks': len(ac), 'headings': len(kh), 'captions': len(a_caps)})
+        docs.append({'path': entry['translation_path'], 'front_matter_present': has_front_matter, 'code_blocks': len(ac), 'headings': len(kh), 'captions': len(a_caps)})
     # Also validate the edition's navigation, guidelines and review documentation.
     for path in [ROOT / 'README.md', ROOT / 'README.ko.md', ROOT / 'PROJECT_STATE.md', *(ROOT / 'ko').glob('*.md'), ROOT / 'ko/assets/README.md', ROOT / 'ko/assets/PRESERVED_IMAGES.ko.md']:
         if path.exists():

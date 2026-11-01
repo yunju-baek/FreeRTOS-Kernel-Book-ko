@@ -1013,6 +1013,13 @@
     "human_review": "not-performed",
     "example_execution": "not-performed",
     "historical_reviews": "Earlier reviews are retained as historical records; the latest Codex review records code/caption fixes and resolves previous needs-image-check integration items.",
-    "editorial_followup": "2026-11-01: repeated English glosses removed; captions use Korean only; page front matter removed; style v0.5, glossary v0.4."
+    "editorial_followup": "2026-11-01: repeated English glosses removed; captions use Korean only; page front matter removed; style v0.5, glossary v0.4.",
+    "front_matter_audit": {
+      "date": "2026-11-01",
+      "scope": "본문 13장과 부속 문서 5종 전체",
+      "documents_checked": 18,
+      "documents_with_front_matter": 0,
+      "report": "publish/translation-validation.json"
+    }
   }
 }
