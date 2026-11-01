@@ -27,8 +27,8 @@
       "repository_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Partner-Supported-Ports"
     }
   ],
-  "style_version": "0.3",
-  "glossary_version": "0.3",
+  "style_version": "0.4",
+  "glossary_version": "0.4",
   "status_values": [
     "not-started",
     "draft",
@@ -123,6 +123,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -178,6 +187,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -245,6 +263,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -300,6 +327,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -348,6 +384,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -399,6 +444,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -446,6 +500,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -491,6 +554,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -541,6 +613,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -583,6 +664,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -631,6 +721,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -678,6 +777,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -711,6 +819,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -859,6 +976,7 @@
     "structural_report": "publish/translation-validation.json",
     "human_review": "not-performed",
     "example_execution": "not-performed",
-    "historical_reviews": "Earlier reviews are retained as historical records; the latest Codex review records code/caption fixes and resolves previous needs-image-check integration items."
+    "historical_reviews": "Earlier reviews are retained as historical records; the latest Codex review records code/caption fixes and resolves previous needs-image-check integration items.",
+    "editorial_followup": "2026-11-01: repeated English glosses removed; caption labels use Korean only; style/glossary v0.4."
   }
 }

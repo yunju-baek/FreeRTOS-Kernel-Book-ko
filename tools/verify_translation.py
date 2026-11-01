@@ -21,6 +21,9 @@ CAPTION = re.compile(r'^ {0,3}\*\*\*(Figure|Listing|Example|Table|그림|코드|
 KINDS = {'그림': 'Figure', '코드': 'Listing', '예제': 'Example', '표': 'Table'}
 HTML_ANCHOR = re.compile(r'<a\b[^>]*(?:id|name)=[\"\']([^\"\']+)[\"\'][^>]*>', re.I)
 MARKDOWN_LINK = re.compile(r'(!?)\[([^\n]*?)\]\(([^\s)]+)(?:\s+\"[^\"]*\")?\)')
+REPEATED_ENGLISH = re.compile(r'\b([A-Za-z][A-Za-z0-9_]*(?:[ -][A-Za-z][A-Za-z0-9_]*){0,5})\s*\(\s*\1\s*\)', re.I)
+ENGLISH_CAPTION_LABEL = re.compile(r'^ {0,3}\*\*\*(?:그림|표|코드|예제) [\d.]+\s*\((?:Figure|Table|Listing|Example) [\d.]+\)', re.M)
+GLOSSED_FILENAME = re.compile(r'\b[A-Za-z_]+\([^\n()]*[가-힣][^\n()]*\)\.[A-Za-z]+')
 
 
 def without_code(text):
@@ -87,6 +90,10 @@ def main():
         check(source_blob == entry['source_blob_sha'], f'Manifest source blob: {src.name}')
         ac, bc = [m[0] for m in FENCE.finditer(en)], [m[0] for m in FENCE.finditer(ko)]
         check(ac == bc, f'Fenced code differs: {dst.name}')
+        visible_prose = re.sub(r'<[^>]+>|`+[^`\n]*`+', '', without_code(ko))
+        check(not REPEATED_ENGLISH.search(visible_prose), f'Repeated English gloss: {dst.name}')
+        check(not ENGLISH_CAPTION_LABEL.search(visible_prose), f'English caption label: {dst.name}')
+        check(not GLOSSED_FILENAME.search(visible_prose), f'Gloss inserted into filename: {dst.name}')
         eh, kh = HEADING.findall(without_code(en)), HEADING.findall(without_code(ko))
         if src.name.startswith('ch'):
             def structure(items):
