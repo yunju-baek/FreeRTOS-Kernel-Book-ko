@@ -16,6 +16,8 @@
 | [작업 절차와 요청 양식](ko/WORKFLOW.md) | 장·절별 작업 시작과 검수 방법 |
 | [원문과 번역 상태](ko/translation-manifest.json) | 원문 commit·blob, submodule, 파일별 상태 |
 | [그림 asset 안내](ko/assets/README.md) | 그림 한글화 기준, 원본 대응과 검수 |
+| [병행 번역 인계](ko/IMAGE_HANDOFF.md) | 별도 worktree에서 번역을 시작하는 지시문과 그림 통합 방법 |
+| [그림 비교 페이지](ko/assets/index.html) | 원본과 한글화 도표 53개의 비교 |
 
 ## 원문과 작업본
 

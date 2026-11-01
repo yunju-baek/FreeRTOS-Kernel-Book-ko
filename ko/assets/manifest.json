@@ -11,7 +11,15 @@
       "status": "not-used",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": null,
+      "source_dimensions": [
+        900,
+        520
+      ],
+      "target_dimensions": [
+        900,
+        520
+      ]
     },
     {
       "source_path": "media/amazon-smiley-logo.png",
@@ -22,7 +30,15 @@
       "status": "not-used",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": null,
+      "source_dimensions": [
+        650,
+        365
+      ],
+      "target_dimensions": [
+        650,
+        365
+      ]
     },
     {
       "source_path": "media/aws-logo-hr.png",
@@ -40,7 +56,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        581,
+        346
+      ],
+      "target_dimensions": [
+        581,
+        346
+      ],
+      "target_sha256": "dd7bba45aec46ac5b393465f6b7a224e1eb62bae54e46cdc2e8e1b4d8f3ba304"
     },
     {
       "source_path": "media/aws-logo-lr.png",
@@ -51,7 +82,15 @@
       "status": "not-used",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": null,
+      "source_dimensions": [
+        320,
+        192
+      ],
+      "target_dimensions": [
+        320,
+        192
+      ]
     },
     {
       "source_path": "media/aws-logo.png",
@@ -62,7 +101,15 @@
       "status": "not-used",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": null,
+      "source_dimensions": [
+        4000,
+        2400
+      ],
+      "target_dimensions": [
+        4000,
+        2400
+      ]
     },
     {
       "source_path": "media/figure_4.10_example_4.4_state_machine.png",
@@ -77,10 +124,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.10_example_4.4_state_machine.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate '(super state)' to '(상위 상태)', each 'called' to '호출', 'Event' to '이벤트', 'Blocking API function called' to 'blocking API 함수 호출'. Keep all state names and vTaskSuspend()/vTaskResume() exactly English. CRITICAL preserve original bold vs thin arrows exactly: bold Ready->Running, bold Running->Blocked, bold Blocked->Ready; Running->Ready is THIN. Keep all other arrows and initial filled circle. Do not use the other earlier version's line widths.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "0086a29f2556b3e0fa9daee97dd91ab118ff12344ed78e602b204735ee7b3359",
+      "source_dimensions": [
+        642,
+        791
+      ],
+      "target_dimensions": [
+        1130,
+        1392
+      ]
     },
     {
       "source_path": "media/figure_4.11_example_4.6_execution_pattern.png",
@@ -95,10 +158,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.11_example_4.6_execution_pattern.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Periodic, Continuous 1, Continuous 2, Idle, t1,t2,t3,t5 and vTaskDelayUntil() in English. Time -> 시간. Six callouts translate verbatim as follows. 1: '1 - Continuous 1은 한 tick 주기(t1~t2의 time slice) 동안 실행되며, 이 동안 문자열을 여러 번 출력할 수 있다.' 2: '2 - tick interrupt에서 scheduler가 다음 task를 선택한다. 두 Continuous task는 우선순위가 같고 항상 실행 가능하므로 처리 시간을 나눈다. Continuous 2는 한 tick 주기 동안 Running 상태가 되며 문자열을 여러 번 출력할 수 있다.' 3: '3 - t3에 tick interrupt가 다시 발생해 Continuous 1로 전환한다. 이 과정이 반복된다.' 4: '4 - t5의 tick interrupt에서 Periodic task의 대기 시간이 끝나 Ready 상태로 전환된다. 우선순위가 가장 높으므로 즉시 Running 상태가 되어 문자열을 정확히 한 번 출력한 뒤 vTaskDelayUntil()을 호출해 Blocked 상태로 돌아간다.' 5: '5 - Periodic task가 Blocked 상태가 되면 scheduler가 다시 실행할 task를 고른다. 여기서는 Continuous 1이 선택되어 다음 tick interrupt까지 실행되며 문자열을 여러 번 출력할 수 있다.' Idle note: '실행 가능한 더 높은 우선순위의 task가 항상 있으므로 idle task는 Running 상태가 되지 않는다.' Keep all timing bar locations and transitions, red short Periodic segment exactly at t5, no invented axis marks. Korean font may be smaller to fit but readable.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "11dee0b127dc85b835fab1a158d2406a7a9add52c9c2d5432c5676f55421f3dd",
+      "source_dimensions": [
+        989,
+        819
+      ],
+      "target_dimensions": [
+        1379,
+        1141
+      ]
     },
     {
       "source_path": "media/figure_4.14_example_4.8_execution_sequence.png",
@@ -113,10 +192,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.14_example_4.8_execution_sequence.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Task 1, Task 2, Idle, t1,t2; Time -> 시간. Callout 1: '1 - 우선순위가 가장 높은 Task 1이 먼저 실행된다'. Callout 2: '2 - Task 1이 Task 2의 우선순위를 가장 높게 설정할 때마다 Task 2가 실행된다'. Callout 3: '3 - Task 2가 자신의 우선순위를 Task 1보다 낮추면 Task 1이 다시 실행된다. 이 과정이 반복된다'. Idle note: '두 애플리케이션 task는 항상 실행 가능하고 우선순위가 idle task보다 높으므로 idle task는 실행되지 않는다'. Preserve short alternating bars and exact arrow count.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "69f8ac39c4b79cac79510f469485a65c2be4340cf98d3fb264c3f13ae7d7ef0e",
+      "source_dimensions": [
+        494,
+        544
+      ],
+      "target_dimensions": [
+        1194,
+        1317
+      ]
     },
     {
       "source_path": "media/figure_4.17_example_4.9_execution_sequence.png",
@@ -131,10 +226,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.17_example_4.9_execution_sequence.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Time -> 시간. Keep Task 2, Task 1, Idle, t1,t2,tn. Callout 1: '1 - Task 1이 실행되어 Task 2를 생성한다. 우선순위가 더 높은 Task 2가 즉시 실행된다.' Callout 2: '2 - Task 2는 자신을 삭제하기만 한다. 이후 Task 1이 다시 실행된다.' Callout 3: '3 - Task 1이 vTaskDelay()를 호출하면 지연 시간이 끝날 때까지 idle task가 실행된다. 이후 전체 과정이 반복된다.' Preserve all green/blue/black execution segments and transition arrows.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "6860024e9939daeffbcd84562444d2b9eb2d3d2ccc24368c187562bbb8986b24",
+      "source_dimensions": [
+        787,
+        593
+      ],
+      "target_dimensions": [
+        1445,
+        1088
+      ]
     },
     {
       "source_path": "media/figure_4.18_preemption_execution_pattern.png",
@@ -149,10 +260,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.18_preemption_execution_pattern.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate labels: 'Task1 (high, event)' -> 'Task1 (높음, 이벤트)'; 'Task2 (med, periodic)' -> 'Task2 (중간, 주기적)'; 'Task3 (low, event)' -> 'Task3 (낮음, 이벤트)'; 'Idle task (continuous)' -> 'Idle task (연속 실행)'. Callouts: 'Task 2가 Task 3을 선점한다'; 'Task 1이 Task 2를 선점한다'; 'Task 3이 idle task를 선점한다'; 'Task 2가 idle task를 선점한다'; '우선순위가 더 높은 task들이 대기할 때까지 이벤트 처리가 지연된다'. Keep EVERY t1 through t13 label including closely spaced t10,t11,t12, exact timing bars and dashed lines. Do not change positions of any execution interval.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "53e2c9a728250d78fe8cac1505c06667e818a75f2be44bdbaa05f39857c79a96",
+      "source_dimensions": [
+        804,
+        398
+      ],
+      "target_dimensions": [
+        1784,
+        882
+      ]
     },
     {
       "source_path": "media/figure_4.19_time_slicing_execution_pattern.png",
@@ -167,10 +294,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.19_time_slicing_execution_pattern.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Labels: Task1 (high, event) -> Task1 (높음, 이벤트); Task2 (Idle priority, continuous) -> Task2 (idle 우선순위, 연속 실행); Idle task (continuous) -> Idle task (연속 실행). Top callout -> 'Task 1이 다시 Blocked 상태가 된다'. Bottom callout -> 'Task 1이 Blocked 상태에서 벗어나 idle task를 선점한다'. Keep t1..t11 including t6,t7 below axis exactly, preserve timing bars.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "7a7f2d495bece59770f0f178cc7978f1f50186a671ab96857dd65eb799c13c59",
+      "source_dimensions": [
+        1020,
+        320
+      ],
+      "target_dimensions": [
+        2170,
+        725
+      ]
     },
     {
       "source_path": "media/figure_4.1_top_level_task_states.png",
@@ -196,7 +339,15 @@
         "result": "pass",
         "unresolved": []
       },
-      "target_sha256": "7a679669522c192d6750e36d619d6a83a5f52095d0680a48ebed2dd6e1997fb0"
+      "target_sha256": "7a679669522c192d6750e36d619d6a83a5f52095d0680a48ebed2dd6e1997fb0",
+      "source_dimensions": [
+        633,
+        325
+      ],
+      "target_dimensions": [
+        1751,
+        898
+      ]
     },
     {
       "source_path": "media/figure_4.20_time_slicing_with_yield_execution_pattern.png",
@@ -211,10 +362,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.20_time_slicing_with_yield_execution_pattern.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Labels: Task1 (high, event) -> Task1 (높음, 이벤트); Task2 (Idle priority, continuous) -> Task2 (idle 우선순위, 연속 실행); Idle task (continuous) -> Idle task (연속 실행). Top left: 'Task 2가 남은 time slice 동안 실행된다'. Top right: 'Task 1이 다시 Blocked 상태가 되어 Task 2가 계속 실행된다'. Bottom left: 'idle task는 구현 루프를 한 번 반복한 뒤 실행권을 양보하여 scheduler가 다른 task를 선택하게 한다'. Bottom right: 'Task 1이 Blocked 상태에서 벗어나 Task 2를 선점한다'. Preserve all tiny black idle marks, blue interrupted segments, green event, t1..t11.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "4be456879dffbf6fd75ee3ef877f5409779729e30946d0f45e14be2d5da1a332",
+      "source_dimensions": [
+        1036,
+        387
+      ],
+      "target_dimensions": [
+        2052,
+        766
+      ]
     },
     {
       "source_path": "media/figure_4.21_equal_priority_without_time_slicing_execution_pattern.png",
@@ -229,10 +396,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.21_equal_priority_without_time_slicing_execution_pattern.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Labels: Task1 (high, event) -> Task1 (높음, 이벤트); Task2 (Idle priority, continuous) -> Task2 (idle 우선순위, 연속 실행); Idle task (continuous) -> Idle task (연속 실행). Top left callout: 'Task 1이 Blocked 상태에서 벗어나 idle task를 선점한다'. Top right and bottom right: 'Task 1이 다시 Blocked 상태가 된다'. Bottom left: 'Task 1이 Blocked 상태에서 벗어나 Task 2를 선점한다'. Preserve all t1..t13 marks including sub-tick t6,t7,t9,t10. Green bars at t6..t7 and t9..t10, blue bar t7..t9, two long black idle segments must be exactly preserved.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "df78d9b6bca332cd128c0f3c0bf61d81996b56a9808f763f19aa171e4e965ff5",
+      "source_dimensions": [
+        1012,
+        334
+      ],
+      "target_dimensions": [
+        2172,
+        724
+      ]
     },
     {
       "source_path": "media/figure_4.22_cooperative_scheduler_execution_pattern.png",
@@ -247,10 +430,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.22_cooperative_scheduler_execution_pattern.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Labels: Task1 (high priority) -> Task1 (높은 우선순위); Task2 (medium priority) -> Task2 (중간 우선순위); Task3 (low priority) -> Task3 (낮은 우선순위). Callouts: top left '인터럽트가 semaphore에 신호를 보내면 Task 1의 대기가 해제된다'; top right 'Task 1이 Blocked 상태가 되면 Task 2가 Running 상태로 전환된다'; bottom left 'Task 3이 queue에 쓰면 Task 2의 대기가 해제된다'; bottom right 'Task 3이 taskYIELD()를 호출하면 Task 1이 Running 상태로 전환된다'. Keep t1..t6, solid vs dotted execution lines EXACTLY: task1 dotted t3..t4 then solid t4..t5, task2 dotted t2..t5 then solid t5..t6, task3 solid to t4, dotted t4..t6, solid after t6.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "1b034b762af00c6f76a7e3fd0564f8d66bdf74f3e2ad7a8557a8f8507b72b45a",
+      "source_dimensions": [
+        935,
+        352
+      ],
+      "target_dimensions": [
+        2045,
+        769
+      ]
     },
     {
       "source_path": "media/figure_4.3_example_4.1_execution_pattern.png",
@@ -265,10 +464,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.3_example_4.1_execution_pattern.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Replace left callout text with 't1에 Task 1이 Running 상태가 되어 t2까지 실행된다'. Replace right callout with 't2에 Task 2가 Running 상태가 되어 t3까지 실행된다. t3에 Task 1이 다시 Running 상태가 된다'. Replace 'Time' with '시간'. Keep Task 1, Task 2, t1, t2, t3. Preserve exactly three blue and three green horizontal execution segments.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "f60d04a398b1fddb8bedb1b716e290aa8824200330731bca46cb7792eb603eb3",
+      "source_dimensions": [
+        630,
+        427
+      ],
+      "target_dimensions": [
+        1523,
+        1032
+      ]
     },
     {
       "source_path": "media/figure_4.4_expanded_execution_sequence_with_tick_interrupt.png",
@@ -283,10 +498,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.4_expanded_execution_sequence_with_tick_interrupt.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Replace 'Kernel' with '커널'. Callouts: 'Tick interrupt occurs' -> 'tick interrupt 발생'; 'Kernel runs in tick interrupt to select next task' -> '커널이 tick interrupt에서 실행되어 다음 task를 선택한다'; 'Newly selected task runs when the tick interrupt completes' -> 'tick interrupt가 끝나면 새로 선택한 task가 실행된다'. Preserve Task 1, Task 2, t1 t2 t3 and all four transition arrows and execution bars.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "8cbf8af31ff5a61df3c0b94e70d48d481ae2ab8606d8d642abeb219a42c2c824",
+      "source_dimensions": [
+        702,
+        540
+      ],
+      "target_dimensions": [
+        1430,
+        1100
+      ]
     },
     {
       "source_path": "media/figure_4.6_execution_pattern_higher_priority_task.png",
@@ -301,10 +532,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.6_execution_pattern_higher_priority_task.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Replace 'Kernel' with '커널'. Small callout -> 'tick interrupt 발생'. Large callout -> 'scheduler는 tick interrupt에서 실행되지만 같은 task를 선택한다. Task 2는 항상 Running 상태이고 Task 1은 항상 Not Running 상태다'. Keep Task 1, Task 2, t1, t2, t3 exactly. No blue task execution bar may be introduced; preserve green-only execution and the two red interrupt markers.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "2a8288c588d718aa1b3af43a4f7f8863351c8e43e4baecebd878c31caa1095fa",
+      "source_dimensions": [
+        704,
+        462
+      ],
+      "target_dimensions": [
+        1548,
+        1016
+      ]
     },
     {
       "source_path": "media/figure_4.7_full_task_state_machine.png",
@@ -319,10 +566,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.7_full_task_state_machine.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep the exact state names Not Running, Suspended, Ready, Running, Blocked in English. Translate '(super state)' to '(상위 상태)'. Change every 'called' to '호출', so vTaskSuspend() called -> 'vTaskSuspend() 호출', vTaskResume() called -> 'vTaskResume() 호출'. Change 'Event' to '이벤트'. Change 'Blocking API function called' to 'blocking API 함수 호출'. Preserve ALL existing arrows exactly: two opposite Ready/Running arrows, Ready->Suspended, Suspended->Ready, Blocked->Ready, Blocked->Suspended, Running->Suspended, Running->Blocked, and initial filled dot->Ready. Preserve the Not Running container containing only Suspended, Ready and Blocked.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "08c1804e945e4b6afba16cf5c0db892dd6a1883a5350653ec875cee7f16a2b2f",
+      "source_dimensions": [
+        583,
+        707
+      ],
+      "target_dimensions": [
+        1139,
+        1381
+      ]
     },
     {
       "source_path": "media/figure_4.9_vTaskDelay_execution_sequence.png",
@@ -337,10 +600,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/figure_4.9_vTaskDelay_execution_sequence.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep labels Task 1, Task 2, Idle, t1,t2,t3,tn; translate Time to 시간. Replace numbered callouts exactly: 1: '1 - Task 2의 우선순위가 가장 높아 먼저 실행된다. 문자열을 출력하고 vTaskDelay()를 호출해 Blocked 상태가 되면, 우선순위가 낮은 Task 1이 실행될 수 있다.' 2: '2 - Task 1도 문자열을 출력한 뒤 vTaskDelay()를 호출해 Blocked 상태가 된다.' 3: '3 - 두 애플리케이션 task가 모두 Blocked 상태이므로 idle task가 실행된다.' 4: '4 - 지연 시간이 끝나면 scheduler가 두 task를 Ready 상태로 옮긴다. 두 task는 다시 실행된 뒤 vTaskDelay()를 호출해 Blocked 상태로 돌아간다. 우선순위가 높은 Task 2가 먼저 실행된다.' Preserve all execution bars and arrow geometry, no t4 added.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "eef2867dd7dfe329743fdb6f86674abec4f3c854d191e1aacf474460bebd7a99",
+      "source_dimensions": [
+        839,
+        539
+      ],
+      "target_dimensions": [
+        1566,
+        1005
+      ]
     },
     {
       "source_path": "media/freeRTOS.png",
@@ -358,7 +637,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        200,
+        150
+      ],
+      "target_dimensions": [
+        200,
+        150
+      ],
+      "target_sha256": "34f765c3984b5ade2472b855dc2da1b9b6f1a81e1a1ad72d00b4b562f08eb9c8"
     },
     {
       "source_path": "media/image05.png",
@@ -373,10 +667,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image05.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explicitly requested text. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Replace each 'Free space' with '여유 공간'. Keep A, B, C, Stack, TCB and configTOTAL_HEAP_SIZE exactly unchanged. Preserve all three memory columns, all colored blocks, heights, white free spaces and bracket extents. Only free-space wording changes.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "1271c5d0852ebdd744881e3422136b2905fb57681a15cbac6c60eb1664351d8a",
+      "source_dimensions": [
+        490,
+        368
+      ],
+      "target_dimensions": [
+        1447,
+        1087
+      ]
     },
     {
       "source_path": "media/image06.png",
@@ -391,10 +701,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image06.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explicitly requested text. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Replace all 'Free space' labels including the middle split label with '여유 공간'. Keep A, B, C, Stack, TCB and configTOTAL_HEAP_SIZE exactly unchanged. Preserve the three columns, orange/green/blue/red blocks and their exact relative sizes, and the empty middle block in column B. Do not add or remove blocks.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "86b7d040d29226f7ea4f77b2cbc6a1e1aaa94e3d23a54ebbcf6b1ade841b2b6a",
+      "source_dimensions": [
+        510,
+        483
+      ],
+      "target_dimensions": [
+        1289,
+        1221
+      ]
     },
     {
       "source_path": "media/image07.png",
@@ -409,10 +735,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image07.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explicitly requested text. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Replace all 'Free space' and 'Free Space' labels with '여유 공간'. Replace the two 'User' labels with '사용자'. Keep A, B, C, D, E, F, Stack, TCB, Queue, configTOTAL_HEAP_SIZE unchanged. Preserve all six columns, block subdivisions and colors, all blank gaps and relative heights, including the very small two gaps above/below User in E. No new caption.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "2f4338ffa7b49e319c63f9e82f6a4bf822b518fc38da8d4c0a9e96f8ed436597",
+      "source_dimensions": [
+        1111,
+        499
+      ],
+      "target_dimensions": [
+        1871,
+        840
+      ]
     },
     {
       "source_path": "media/image08.png",
@@ -427,10 +769,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image08.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explicitly requested text. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate explanatory labels exactly: '32K bytes' -> '32K 바이트'; '65K bytes' -> '65K 바이트' (preserve 65, do not correct it); 'RAM1 Remaining Free' -> 'RAM1 남은 여유 공간'; 'RAM1 Containing Variables' -> '변수를 담은 RAM1'; 'RAM1 Containing Variables, inc. ucHeap[]' -> 'ucHeap[]을 포함한 변수를 담은 RAM1'. Keep A,B,C,RAM1,RAM2,RAM3,ucHeap[] and ALL addresses exactly, including 0xFFFFFFFF, 0x037FFF, 0x030000, 0x027FFF, 0x020000, 0x01FFFF, 0x01nnnn, 0x010000, 0x00000000. Do not alter segmentation, positions, gray shades, break marks or numerical values.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "c4bb12c21c787af882ced361d8ae3fcf2d700d39f75dd962000b3eb455b8b235",
+      "source_dimensions": [
+        1031,
+        596
+      ],
+      "target_dimensions": [
+        1649,
+        954
+      ]
     },
     {
       "source_path": "media/image31.png",
@@ -445,10 +803,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image31.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Preserve all five panels, all Queue cells (five cells per panel), arrows, data values 10 and 20, Task A/Task B, Queue, and code text including 'int x;', 'int y;', 'x = 10;', 'x = 20;', '// y now equals 10' EXACTLY. Send -> 전송; Receive -> 수신. Translate descriptions in order: panel1 'Task A와 Task B의 통신을 위해 queue를 생성한다. 정수를 최대 5개 저장할 수 있으며, 생성 직후에는 값이 없어 비어 있다.' panel2 'Task A가 지역 변수의 값을 queue 뒤쪽에 쓴다(전송한다). queue가 비어 있었으므로 이 값은 유일한 항목이며, queue의 맨 앞 값이자 맨 뒤 값이다.' panel3 'Task A가 지역 변수의 값을 바꾸고 다시 queue에 쓴다. 두 값의 복사본이 저장된다. 처음 쓴 값은 맨 앞에 남고 새 값은 맨 뒤에 삽입된다. 빈칸은 세 개다.' panel4 'Task B가 queue의 값을 다른 변수로 읽는다(수신한다). 받은 값은 맨 앞 항목이며, Task A가 처음 쓴 값(여기서는 10)이다.' panel5 'Task B가 항목 하나를 제거하면 Task A가 두 번째로 쓴 값만 남는다. 다음에 Task B가 읽으면 이 값을 받는다. 빈칸은 네 개다.' Do not alter code comments or the red dashed move arrow in panel5.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "6df0c2cba295a141e79173a4ee11a35060f38ba8f927c5e1d6cc3b9ec2edbdde",
+      "source_dimensions": [
+        721,
+        923
+      ],
+      "target_dimensions": [
+        1108,
+        1420
+      ]
     },
     {
       "source_path": "media/image32.jpg",
@@ -466,7 +840,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        332
+      ],
+      "target_dimensions": [
+        668,
+        332
+      ],
+      "target_sha256": "2e13aa7fc533ebd582ae259b8e83ec64aad1a77aa19485837553cf70ec5d50a0"
     },
     {
       "source_path": "media/image33.png",
@@ -481,10 +870,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image33.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep task names Receiver, Sender 2, Sender 1; Time -> 시간; keep t1. Callout1 '1 - 우선순위가 가장 높은 Receiver가 먼저 실행되어 queue를 읽으려 한다. queue가 비어 있으므로 Blocked 상태에서 데이터를 기다린다. 그 뒤 Sender 2가 실행된다.' Callout2 '2 - Sender 2가 queue에 쓰면 Receiver의 대기가 해제된다. 우선순위가 가장 높은 Receiver가 Sender 2를 선점한다.' Callout3 '3 - Receiver가 queue를 비우고 다시 Blocked 상태가 된다. 이번에는 Sender 1이 실행된다.' Callout4 '4 - Sender 1이 queue에 쓰면 Receiver의 대기가 해제되어 Sender 1을 선점한다. 이 과정이 반복된다.' Preserve exact bars and arrows.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "fc018009704448548c08db2d22c2fee98e3c236b30f8059e6c6b6d39ef308fdc",
+      "source_dimensions": [
+        733,
+        421
+      ],
+      "target_dimensions": [
+        1655,
+        950
+      ]
     },
     {
       "source_path": "media/image34.png",
@@ -499,10 +904,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image34.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate node labels only: 'CAN bus Task' -> 'CAN 버스 task'; 'Another Task' -> '다른 task'; 'HMI Task' -> 'HMI task'; 'Controller' -> '제어기'. Keep Queue in English. Keep all red data labels EXACTLY: eDataID = eMotorSpeed; lDataValue = 10; eDataID = eSpeedSetPoint; lDataValue = 5. Preserve the entire code snippet character for character: typedef struct { ID_t eDataID; int32_t lDataValue; } Data_t; Keep its formatting, underscores and semicolons. Preserve three red incoming arrows and one black outgoing arrow, all three queue cells and all geometry. This is text localization ONLY.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "199481835fb31f5860f42232098dcaca414f45fed593da85a580a5dc8cdc1684",
+      "source_dimensions": [
+        812,
+        392
+      ],
+      "target_dimensions": [
+        1805,
+        871
+      ]
     },
     {
       "source_path": "media/image35.jpg",
@@ -520,7 +941,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        331
+      ],
+      "target_dimensions": [
+        668,
+        331
+      ],
+      "target_sha256": "c7d13249443ed866b0d68a6bc55142ceb44766b216673c8b97d403e473f003b4"
     },
     {
       "source_path": "media/image36.png",
@@ -533,12 +969,28 @@
           "source_caption": "***Figure 5.6*** *The sequence of execution produced by Example 5.2*"
         }
       ],
-      "kind": "explanatory-diagram",
+      "kind": "task-label-diagram",
       "target_path": "ko/assets/image36.ko.png",
-      "status": "pending",
-      "method": null,
+      "status": "preserve-original",
+      "method": "byte-identical copy",
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "target_sha256": "0ce17fb73f5a356a52274563f3d2d333bdf18278f5f76f682706b21bc207ef3b",
+      "reason": "task 이름 Receiver/Sender와 시간값만 있어 원문 표기 유지. 초기 예정 asset 경로를 유지하기 위해 동일 바이트 사본 제공.",
+      "source_dimensions": [
+        512,
+        301
+      ],
+      "target_dimensions": [
+        512,
+        301
+      ]
     },
     {
       "source_path": "media/image37.jpg",
@@ -556,7 +1008,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        331
+      ],
+      "target_dimensions": [
+        668,
+        331
+      ],
+      "target_sha256": "c470339a732c32937fa4e00b883ca1dee66f1fcd208d543ddf5a942ae479c2d5"
     },
     {
       "source_path": "media/image38.png",
@@ -571,10 +1038,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image38.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Timer1 (one-shot), Timer2 (auto-reload) and all t1 through t17 existing labels exactly (do not add unlabelled ticks). Top period labels -> 'Timer 1의 주기 = 6' and 'Timer 2의 주기 = 5'. Top callout -> 'one-shot timer는 한 번만 실행된다'. Bottom left -> '두 timer 모두 t1에 시작한다'. Bottom right -> 'auto-reload timer는 일정한 주기로 반복 실행된다'. Keep blue execution at t7 and black executions at t6,t11,t16 exactly; note original shows t15 label before the last black marker, do not shift the marker to t15. Preserve bidirectional period arrows.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "355864afe86c6a4955a9b063295d83f7ca528bc7f9f4d2cb4698d819c1914591",
+      "source_dimensions": [
+        772,
+        307
+      ],
+      "target_dimensions": [
+        1989,
+        791
+      ]
     },
     {
       "source_path": "media/image39.png",
@@ -589,10 +1072,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image39.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Dormant and Running state names and all APIs exact. Replace called with 호출; xTimerStart(), xTimerReset() or xTimerChangePeriod() called -> 'xTimerStart(), xTimerReset() 또는 xTimerChangePeriod() 호출'. xTimerCreate() called -> xTimerCreate() 호출; xTimerStop() called -> xTimerStop() 호출. Translate 'Timer expired / Execute Callback' -> 'timer 만료 / callback 실행'. Preserve exactly the initial arrow into Dormant, Dormant->Running, Running->Dormant, and self-loop on Running. Do not change self-loop to another state.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "0f510fd8994ddaada0486ce32fa63e48b28a144a32fdad746ffd8a99b41d68fc",
+      "source_dimensions": [
+        727,
+        325
+      ],
+      "target_dimensions": [
+        1877,
+        838
+      ]
     },
     {
       "source_path": "media/image40.png",
@@ -607,10 +1106,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image40.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Dormant, Running and all APIs in English. Replace every called with 호출; replace or with 또는; 'Timer expired / Execute Callback' -> 'timer 만료 / callback 실행'. Preserve all FOUR arrows: creation -> Dormant, start/reset/change Dormant -> Running, stop Running -> Dormant, and expiration Running -> Dormant. Unlike the auto-reload figure, there MUST NOT be a self-loop on Running. Preserve outer vs inner arcs.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "a7a0deb2a4298f891b5f6de1e7cb9a43a76f1a26dd9cbd9597d2b3fe5a94ad15",
+      "source_dimensions": [
+        656,
+        300
+      ],
+      "target_dimensions": [
+        1855,
+        848
+      ]
     },
     {
       "source_path": "media/image41.png",
@@ -625,10 +1140,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image41.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate ONLY headings and three external middle labels. 'Application Code' -> '애플리케이션 코드'; 'FreeRTOS (kernel) Code' -> 'FreeRTOS (커널) 코드'; 'The API function writes to the timer command queue' -> 'API 함수가 timer command queue에 쓴다'; 'Timer command queue' -> 'timer command queue'; 'The RTOS daemon task reads from the timer command queue' -> 'RTOS daemon task가 timer command queue에서 읽는다'. CRITICAL preserve ALL text in BOTH code panels verbatim, including green English comments, punctuation, the pseudocode disclaimer, void vAFunction( void ), xTimerReset(); void prvTimerTask( ... ), for( ;; ), xQueueReceive(); braces and ellipses. Do not translate code comments. Preserve arrow from xTimerReset() across queue to xQueueReceive().",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "30ee22c6bbf2cc9bb03681c17b117e9a1a1c7e7112e1bf74abd29d399442f40a",
+      "source_dimensions": [
+        868,
+        494
+      ],
+      "target_dimensions": [
+        1663,
+        945
+      ]
     },
     {
       "source_path": "media/image42.png",
@@ -643,10 +1174,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image42.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Task1, Daemon Task, Idle, t1,t2,t3,t4,t5 and xTimerStart() in English. Top left callout -> 'daemon task가 “timer 시작” 명령을 처리한다'. Top right -> 'daemon task가 Blocked 상태가 된다'. Bottom left -> 'Task 1이 xTimerStart()를 호출한다'. Bottom right -> 'xTimerStart() 호출이 반환된다'. Preserve EXACT source connectors and timing: Task1 blue continuous from t1 to t4, daemon green t4 to t5, idle black after t5. Do not move daemon processing earlier despite positions of callout text.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "12b30c6eee1cb82ebbdf6d556d63978deddc5b68bdcb459644d459ab197336af",
+      "source_dimensions": [
+        524,
+        327
+      ],
+      "target_dimensions": [
+        1588,
+        991
+      ]
     },
     {
       "source_path": "media/image43.png",
@@ -661,10 +1208,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image43.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Daemon Task, Task1, Idle, all t1,t2,t3,t4,t5 and xTimerStart() English. Top left -> 'daemon task가 “timer 시작” 명령을 처리한다'. Top right -> 'daemon task가 Blocked 상태가 된다'. Bottom left -> 'Task 1이 xTimerStart()를 호출한다'. Bottom right -> 'xTimerStart() 호출이 반환된다'. Preserve timing: Task1 blue t1..t2 and t3..t5, daemon green t2..t3, Idle black after t5. Preserve all connector endpoints. The cursor on original is incidental, may omit cursor only.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "823e04943ad20a99bc8592db38f767f2d9f4a1a463e2072b8c9ad5d0703c7b1c",
+      "source_dimensions": [
+        489,
+        327
+      ],
+      "target_dimensions": [
+        1533,
+        1026
+      ]
     },
     {
       "source_path": "media/image44.jpg",
@@ -682,7 +1245,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        331
+      ],
+      "target_dimensions": [
+        668,
+        331
+      ],
+      "target_sha256": "a22389c92adad34529e16e7ae1f46560c50f5a283da22045e3f34168e1ae4bc2"
     },
     {
       "source_path": "media/image45.jpg",
@@ -700,7 +1278,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        331
+      ],
+      "target_dimensions": [
+        668,
+        331
+      ],
+      "target_sha256": "586c7b6d0b9634a396af684b32d693bb01dfda868a979f156d9a2e49de1d401e"
     },
     {
       "source_path": "media/image46.png",
@@ -715,10 +1308,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image46.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Timer1 and ALL original tick labels, numbers, equation and timing geometry. Top left period text -> '만료 시각은 t7로 계산된다 (t1 + 6 = t7)'; middle period text -> '만료 시각을 t11로 다시 계산한다'; right period text -> '만료 시각을 t15로 다시 계산한다'. Bottom boxes in order: 'Timer 1 시작', 'Timer 1 재설정', 'Timer 1 재설정', 'Timer 1 실행'. Preserve start at t1, resets at t5 and t9, red execution marker at t15 and all three double-headed period arrows. Do not invent extra tick labels.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "d86316b6e88b6e6db8b73372e5a1bb4abdc9cad98283938fb48fdae724ff29a9",
+      "source_dimensions": [
+        684,
+        297
+      ],
+      "target_dimensions": [
+        1905,
+        826
+      ]
     },
     {
       "source_path": "media/image47.jpg",
@@ -736,7 +1345,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        331
+      ],
+      "target_dimensions": [
+        668,
+        331
+      ],
+      "target_sha256": "8716d051ae760d7be6cd6702e96424ab59db3a1244f0662fc028a7c32b1ebc13"
     },
     {
       "source_path": "media/image48.png",
@@ -751,10 +1375,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image48.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep ISR, Task2, Task1, t1..t4. '(deferred processing task)' -> '(지연 처리를 담당하는 task)'. Callout1: '1 - Task1이 Running 상태일 때 인터럽트가 발생한다.' Callout2: '2 - ISR이 실행되어 인터럽트를 발생시킨 주변장치를 처리하고 인터럽트를 해제한 뒤 Task 2의 대기를 해제한다.' Callout3: '3 - Task 2의 우선순위가 Task 1보다 높으므로 ISR에서 Task 2로 바로 복귀하여 남은 인터럽트 처리를 마친다.' Callout4: '4 - Task 2가 다음 인터럽트를 기다리며 Blocked 상태가 되면 Task 1이 다시 Running 상태가 된다.' Preserve red curved dashed ISR-to-Task2 arrow, exact intervals t1..t2 Task1, t2..t3 ISR, t3..t4 Task2, Task1 after t4.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "33260cc61607a632a135d7a5b19a5ccf779ae53d1e03189eebec61833679dd8f",
+      "source_dimensions": [
+        762,
+        447
+      ],
+      "target_dimensions": [
+        1639,
+        960
+      ]
     },
     {
       "source_path": "media/image49.png",
@@ -769,10 +1409,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image49.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep ISR, Task2, Task1, t1..t4. '(deferred processing task)' -> '(지연 처리를 담당하는 task)'. Callout1: '1 - 인터럽트가 발생할 때 Task1은 Running 상태이며 Task2는 semaphore를 기다리는 Blocked 상태다.' Callout2: '2 - ISR이 주변장치를 처리하고 인터럽트를 해제한 뒤 semaphore에 신호를 보내 Task 2의 대기를 해제한다.' Callout3: '3 - Task 2가 인터럽트에 필요한 후속 처리를 마친 뒤 semaphore를 기다리며 대기한다. 다음 인터럽트가 다시 대기를 해제한다.' Preserve red curved dashed arrow and all timeline bars and positions.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "2092b5421555a95d97f710b2ca5a256b609b320a9660c3ba9610ff2e6b0fd1a3",
+      "source_dimensions": [
+        653,
+        422
+      ],
+      "target_dimensions": [
+        1561,
+        1008
+      ]
     },
     {
       "source_path": "media/image50.png",
@@ -787,10 +1443,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image50.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep all FIVE panels and all API names xSemaphoreTake(), xSemaphoreGiveFromISR() EXACTLY, as well as Task. Interrupt! -> 인터럽트! Translate prose: panel1 left 'semaphore를 사용할 수 없다…', right '…task는 semaphore를 기다리며 대기한다'. panel2 '인터럽트가 발생해 semaphore에 신호를 보낸다…'. panel3 '…semaphore를 사용할 수 있게 되어 task의 대기가 해제된다…'. panel4 '…task가 semaphore를 획득하면 다시 사용할 수 없게 된다'. panel5 'task는 이제 동작을 수행한다. 완료 후 다시 semaphore 획득을 시도하면 Blocked 상태로 돌아간다.' Preserve faded/dashed unavailable state in first panels, solid transitions, exact red token positions and arrow count. No extra tokens.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "de2624d1ca9363d700dac1c9e81250d402b299628b0d0099a25a6c5886ef7b6e",
+      "source_dimensions": [
+        586,
+        921
+      ],
+      "target_dimensions": [
+        1000,
+        1573
+      ]
     },
     {
       "source_path": "media/image51.jpg",
@@ -808,7 +1480,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        332
+      ],
+      "target_dimensions": [
+        668,
+        332
+      ],
+      "target_sha256": "d3df7a9c36755e99ed26959aacaa6dc6484c8867d927910319fa574237fa96f4"
     },
     {
       "source_path": "media/image52.png",
@@ -823,10 +1510,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image52.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep task labels Interrupt, Handler, Periodic, Idle and t1,t2; Time -> 시간. Callout1 '1 - 대부분의 시간에는 idle task가 실행된다. 500ms마다 Periodic task가 이를 선점한다.' Callout2 '2 - Periodic task가 첫 메시지를 출력한 뒤 인터럽트를 강제로 발생시킨다. ISR이 즉시 실행된다.' Callout3 '3 - ISR이 semaphore에 신호를 보내 vHandlerTask()의 대기를 해제한다. Ready 상태에서 우선순위가 가장 높으므로 ISR은 vHandlerTask()로 바로 복귀한다. 메시지를 출력한 뒤 다음 인터럽트를 기다리는 Blocked 상태로 돌아간다.' Callout4 '4 - Periodic task의 우선순위가 다시 가장 높아진다. 두 번째 메시지를 출력한 뒤 다음 주기를 기다리며 Blocked 상태가 된다. 이제 idle task만 실행 가능하다.' Preserve vHandlerTask() and 500ms, ALL transitions, dashed continuation of idle line.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "7f84fd0a5bc24599daae4caac2517845f01f9aca56d1a1feaa5903562b0f170e",
+      "source_dimensions": [
+        868,
+        451
+      ],
+      "target_dimensions": [
+        1740,
+        904
+      ]
     },
     {
       "source_path": "media/image53.png",
@@ -841,10 +1544,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image53.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep SIX panels and all APIs xSemaphoreTake(), xSemaphoreGiveFromISR(), vProcessEvent() exactly. Task stays English, Interrupt! -> 인터럽트! Translate prose panel1: 'semaphore를 사용할 수 없다…' and '…task는 semaphore를 기다리며 대기한다'. panel2: '인터럽트가 semaphore에 신호를 보낸다…' and '…task의 대기가 해제된다'. panel3: 'task가 semaphore를 획득하면 더 이상 사용할 수 없다. 이후 첫 번째 이벤트 처리를 시작한다.' panel4 left: '첫 이벤트를 처리하는 동안 다른 인터럽트가 발생한다. ISR이 semaphore에 다시 신호를 보내 이벤트를 보관하므로 유실되지 않는다.' right: 'task는 아직 첫 이벤트를 처리 중이다.' panel5: '첫 이벤트 처리가 끝나면 task가 xSemaphoreTake()를 다시 호출한다. 다른 인터럽트가 이미 발생했으므로 semaphore를 사용할 수 있다.' panel6: 'task는 Blocked 상태에 들어가지 않고 semaphore를 획득한 뒤 두 번째 이벤트를 처리한다.' Preserve all red token positions, six panels and faded/solid states exactly.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "18239c8a8d43848759dbad5390f504fb27306b1c82fc58a855a9f94ba242726b",
+      "source_dimensions": [
+        684,
+        829
+      ],
+      "target_dimensions": [
+        1139,
+        1381
+      ]
     },
     {
       "source_path": "media/image54.png",
@@ -859,10 +1578,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image54.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep all EIGHT panels, all Task labels, all APIs xSemaphoreTake(), xSemaphoreGiveFromISR(), vProcessEvent() exactly. Interrupt! -> 인터럽트! Translate prose faithfully; exact Korean panel descriptions: P1 'semaphore를 사용할 수 없다…' / '…task는 semaphore를 기다리며 대기한다.' P2 '인터럽트가 semaphore에 신호를 보낸다…' / '…task의 대기가 해제된다.' P3 'task가 semaphore를 획득하면 더 이상 사용할 수 없다. 이후 첫 이벤트 처리를 시작한다.' P4 '첫 이벤트 처리 중 두 번째 인터럽트가 발생한다. ISR이 다시 semaphore에 신호를 보내 이벤트를 보관하므로 유실되지 않는다.' / 'task는 아직 첫 이벤트를 처리 중이다.' P5 '첫 이벤트 처리 중 세 번째 인터럽트가 발생한다. semaphore가 이미 사용 가능하므로 ISR이 다시 신호를 보낼 수 없어 이벤트가 유실된다.' / 'task는 아직 첫 이벤트를 처리 중이다.' P6 '첫 이벤트 처리가 끝나면 task가 xSemaphoreTake()를 다시 호출한다. 두 번째·세 번째 인터럽트가 이미 발생했으므로 semaphore는 사용 가능하다.' P7 'task는 Blocked 상태에 들어가지 않고 semaphore를 획득한다. semaphore는 다시 사용 불가능해지고 task는 두 번째 이벤트를 처리한다.' P8 '두 번째 이벤트 처리 후 xSemaphoreTake()를 다시 호출하면 semaphore가 없어 task는 Blocked 상태에서 다음 인터럽트를 기다린다. 세 번째 이벤트는 유실되어 처리되지 않는다.' Preserve exact red tokens, faded blocked task and dashed arrow in first/last panel, STOPPED arrow in fifth panel. Do not add another token or remove any step.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "554b6c6407c4ae27b5b99846eee618670073fa7c4ea8c2beee5bf68c698d5d8c",
+      "source_dimensions": [
+        563,
+        922
+      ],
+      "target_dimensions": [
+        980,
+        1605
+      ]
     },
     {
       "source_path": "media/image55.png",
@@ -877,10 +1612,44 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image55.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Preserve SIX panels, four-cell semaphore counters, red token counts and paths, all Task labels and APIs xSemaphoreTake(), xSemaphoreGiveFromISR(), vProcessEvent(). Interrupt! -> 인터럽트! Counter labels replace [The semaphore count is N] with [semaphore count = N] keeping N in order 0,1,1,0,2,1. Prose P1 'task는 semaphore를 기다리며 대기한다'. P2 '인터럽트가 발생해 semaphore에 신호를 보낸다…'. P3 '…semaphore를 사용할 수 있게 되어 task의 대기가 해제된다…'. P4 '…task가 semaphore를 획득하면 다시 사용할 수 없게 된다. 이제 이벤트 처리를 시작한다.' P5 left '첫 이벤트 처리 중 인터럽트 두 개가 더 발생한다. 두 ISR 모두 semaphore에 신호를 보내 두 이벤트를 보관하므로 어느 것도 유실되지 않는다.' right 'task는 아직 첫 이벤트를 처리 중이다.' P6 '첫 이벤트 처리가 끝나면 xSemaphoreTake()를 다시 호출한다. semaphore 두 개가 이미 사용 가능하므로 Blocked 상태에 들어가지 않고 하나를 획득하며, 보관된 semaphore 하나가 남는다.' Preserve final panel's two red tokens (one in counter, one in task) and two red arrows.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Korean labels and original diagram structure directly compared; revision visually checked",
+        "result": "passed",
+        "details": "Panel 5 task dot removed; panel 6 counter now contains one token; all six counter values and arrows preserved"
+      },
+      "target_sha256": "186710ea16a3ce6f28b0aaf3ac73460787ed7b764f60da9b6748d0efd6c3be88",
+      "source_dimensions": [
+        552,
+        894
+      ],
+      "target_dimensions": [
+        985,
+        1597
+      ],
+      "revisions": [
+        {
+          "path": "ko/assets/review/image55.ko.rejected-v1.png",
+          "sha256": "3b3073a8f76fd725f51f9a125b314934ef7960cfb3a091f082213abcac6d23b4",
+          "status": "rejected",
+          "reason": {
+            "reviewer": "Codex",
+            "reviewer_kind": "agent",
+            "date": "2026-11-01",
+            "result": "fail",
+            "unresolved": [
+              "5번째 패널 task 안의 빨간 표시가 추가됨",
+              "6번째 패널 counter에 빨간 표시가 하나 더 추가됨; 원문은 counter 1개와 task 1개"
+            ]
+          }
+        }
+      ],
+      "revision_prompt": "Use case: precise-object-edit. The input is a Korean translation of a six-panel counting semaphore figure. Fix ONLY the two misplaced red circular event tokens. Panel 5 (second from bottom): erase the red circular dot inside the right-hand Task box; keep both red dots in the four-cell semaphore counter. Panel 6 (bottom): erase the red dot in the third counter cell from the left; keep the red dot in the fourth/rightmost counter cell AND the red dot inside the Task box AND both red arrows. Thus the counter-dot/task-dot counts by panel from top to bottom must be: (0,0),(1,0),(1,0),(0,1),(2,0),(1,1). Preserve every other pixel-level semantic feature, Korean text, API spellings, numbers, all six panels, colors, boxes, and arrows. Do not change or rephrase any text. Keep the blue count in panel 6 clearly 'semaphore count = 1'. White background. Do not add anything."
     },
     {
       "source_path": "media/image56.jpg",
@@ -898,7 +1667,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        332
+      ],
+      "target_dimensions": [
+        668,
+        332
+      ],
+      "target_sha256": "62187bc4d18cec083fa7e71f81ae9194664df35b5c27512ecbe74c8dc1f5e321"
     },
     {
       "source_path": "media/image57.jpg",
@@ -916,7 +1700,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        331
+      ],
+      "target_dimensions": [
+        668,
+        331
+      ],
+      "target_sha256": "c3c75d210fb2b1c474304cf758caa1f8c720a023a0b828cb88e633fb502d8991"
     },
     {
       "source_path": "media/image58.png",
@@ -931,10 +1730,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image58.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Interrupt, Daemon Task, Periodic, Idle, t1,t2 and API xTimerPendFunctionCallFromISR() exact. Time -> 시간. Callout1 '1 - 대부분의 시간에는 idle task가 실행된다. 500ms마다 Periodic task가 이를 선점한다.' Callout2 '2 - Periodic task가 첫 메시지를 출력한 뒤 인터럽트를 강제로 발생시킨다. ISR이 즉시 실행된다.' Callout3 '3 - ISR이 xTimerPendFunctionCallFromISR()를 호출해 timer command queue에 쓰면 daemon task의 대기가 해제된다. Ready 상태에서 우선순위가 가장 높으므로 ISR은 daemon task로 바로 복귀한다. daemon task는 증가하는 매개변수 값을 포함한 메시지를 출력한 뒤, 다음 queue 메시지나 software timer 만료를 기다리는 Blocked 상태로 돌아간다.' Callout4 '4 - Periodic task의 우선순위가 다시 가장 높아진다. 두 번째 메시지를 출력하고 다음 주기를 기다리며 Blocked 상태가 된다. 이제 idle task만 실행 가능하다.' Preserve exact all execution bars and transitions.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "4b40bc8d0237658792edc138dda6dce7ef920abd0e0b04977c8a08235531e4bf",
+      "source_dimensions": [
+        924,
+        509
+      ],
+      "target_dimensions": [
+        1689,
+        931
+      ]
     },
     {
       "source_path": "media/image59.jpg",
@@ -952,7 +1767,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        332
+      ],
+      "target_dimensions": [
+        668,
+        332
+      ],
+      "target_sha256": "a585664412de7083a962869dc4eccb4f780b9f1522d983af7420f5d5bc23dc49"
     },
     {
       "source_path": "media/image60.png",
@@ -967,10 +1797,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image60.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Interrupt, StringPrinter, IntegerGenerator, Idle, t1; Time -> 시간. Callout1 '1 - 대부분의 시간에는 idle task가 실행된다. 200ms마다 IntegerGenerator가 이를 선점한다.' Callout2 '2 - IntegerGenerator가 queue에 값 5개를 쓴 뒤 인터럽트를 강제로 발생시킨다.' Callout3 '3 - ISR은 한 queue에서 정수를 읽을 때마다 다른 queue에 문자열을 쓴다. 문자열을 쓰면 StringPrinter의 대기가 해제된다.' Callout4 '4 - 우선순위가 가장 높은 StringPrinter가 ISR 직후 실행되어 queue에서 받은 각 문자열을 출력한다. queue가 비면 Blocked 상태가 되어 우선순위가 낮은 IntegerGenerator가 다시 실행된다.' Callout5 '5 - 주기적인 IntegerGenerator가 다음 주기를 기다리며 대기하면 idle task만 실행 가능해진다. 마지막 실행 시작 시점에서 200ms 후 전체 과정이 반복된다.' Preserve 5 and 200ms values and all lines.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "06a2b412772b05dd00f97ae897fd2851bfc47f03cdfa8126a267b4d976b9669d",
+      "source_dimensions": [
+        843,
+        560
+      ],
+      "target_dimensions": [
+        1539,
+        1022
+      ]
     },
     {
       "source_path": "media/image61.png",
@@ -985,10 +1831,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image61.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep top two configuration strings EXACTLY: configMAX_SYSCALL_INTERRUPT_PRIORITY = 3 and configKERNEL_INTERRUPT_PRIORITY = 1. Change each Priority N to 우선순위 N with N=7,6,5,4,3,2,1 in same order. Left paragraph: 'API 함수를 호출하지 않는 인터럽트는 모든 우선순위를 사용할 수 있으며 중첩될 수 있다.' Upper right paragraph: '이 우선순위의 인터럽트는 커널의 어떤 동작으로도 지연되지 않으며 중첩될 수 있지만, FreeRTOS API 함수를 호출할 수 없다.' Lower right: 'API를 호출하는 인터럽트는 이 우선순위만 사용할 수 있다. 중첩될 수 있지만 critical section에서는 마스킹된다.' Preserve priority7..4 dark green grouped upper bracket, priorities3..1 lower bracket, exact numbers. Do NOT invert priority ordering based on Cortex-M assumptions.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "영문 원본과 생성 결과의 설명 의미, API·수치, 단계·도형·화살표·시간 구간을 시각 대조. 이미지 픽셀 동일성 검증은 아님.",
+        "result": "pass",
+        "unresolved": []
+      },
+      "target_sha256": "6e67b12481570c3f8835d483f4b2f4aefda56c5553072ea5cb8e7a4c878165e5",
+      "source_dimensions": [
+        762,
+        422
+      ],
+      "target_dimensions": [
+        1685,
+        934
+      ]
     },
     {
       "source_path": "media/image62.png",
@@ -1003,10 +1865,43 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image62.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Replace top heading 'Priority 5, or 95, in a device that implements 4 priority bits' with '우선순위 비트를 4개 구현한 장치의 우선순위 5 또는 95'. Keep ALL numeric values exactly, including 5,95,4 in heading and the bit pattern 0 1 0 1 1 1 1 1. Replace Bit 7..Bit 0 with 비트 7..비트 0 respectively. Preserve eight cells, blue shades differentiating upper four bits from lower four and original proportions. Do not silently correct 95.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Korean labels and original diagram structure directly compared; revision visually checked",
+        "result": "passed",
+        "details": "Black outer margin removed; original 8 bit cells and binary 01011111 preserved"
+      },
+      "target_sha256": "1ae4a50d22d66a14a094247d4f6b05f535752f605fd3e78c9d9833fffe6a2ea5",
+      "source_dimensions": [
+        568,
+        167
+      ],
+      "target_dimensions": [
+        2169,
+        725
+      ],
+      "revisions": [
+        {
+          "path": "ko/assets/review/image62.ko.rejected-v1.png",
+          "sha256": "602b70cf9b7738af38d0c32b11fe068297b6bd386a12be328b3237484cbb9be4",
+          "status": "rejected",
+          "reason": {
+            "reviewer": "Codex",
+            "reviewer_kind": "agent",
+            "date": "2026-11-01",
+            "result": "fail",
+            "unresolved": [
+              "상단에 원문에 없는 검은 띠가 생성됨"
+            ]
+          }
+        }
+      ],
+      "revision_prompt": "Use case: precise-object-edit. Change ONLY the solid black horizontal strip across the very top edge of this image to plain white so the entire outer background is white. Preserve the complete blue priority-bit diagram, all Korean text, all eight bit cells, bits 7 through 0, binary 01011111, and priority numbers 5 and 95 exactly. Do not crop, change proportions, rephrase text, blur, embellish, add marks, or alter any diagram content. There must be NO black letterboxing or black outer margin."
     },
     {
       "source_path": "media/image63.png",
@@ -1021,10 +1916,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image63.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Preserve SIX panels, all Task A/Task B labels and xSemaphoreTake()/xSemaphoreGive() APIs, all original red token positions, yellow active task backgrounds, gray blocked task, the red X and green/red access arrows. 'Guarded resource' -> '보호 자원' in each star. Top left -> '자원을 보호하는 mutex'; top right -> 'mutex가 보호하는 자원'. Panel captions P1 '두 task가 자원에 접근하려 하지만 mutex(토큰)를 소유한 task만 접근할 수 있다.' P2 'Task A가 mutex 획득을 시도한다. 사용 가능한 mutex를 획득했으므로 자원에 접근할 수 있다.' P3 'Task B가 같은 mutex 획득을 시도하지만 Task A가 소유 중이므로 실패한다. Task B는 보호 자원에 접근할 수 없다.' P4 'Task B가 mutex를 기다리며 Blocked 상태가 되면 Task A가 다시 실행된다. Task A가 자원 사용을 마치고 mutex를 반납한다.' P5 'Task A가 mutex를 반납하면 Task B의 대기가 해제된다. Task B가 mutex를 획득하면 자원에 접근할 수 있다.' P6 'Task B도 자원 사용을 마치면 mutex를 반납한다. 이제 두 task 모두 mutex를 획득할 수 있다.' Do not add any token dots absent in the original.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "Six mutex panels, token ownership, blocked task, guarded resource and access arrows compared."
+      },
+      "target_sha256": "ebaf3e2b334cf58e58e289d896681f6cff5d1ea91cce9f1a0f390c03ccef5d21",
+      "source_dimensions": [
+        431,
+        902
+      ],
+      "target_dimensions": [
+        867,
+        1815
+      ]
     },
     {
       "source_path": "media/image64.jpg",
@@ -1042,7 +1953,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        332
+      ],
+      "target_dimensions": [
+        668,
+        332
+      ],
+      "target_sha256": "de64c16c7fddca05b63db4922afdc89eef086c89efef143d20cc9d54e59bb526"
     },
     {
       "source_path": "media/image65.png",
@@ -1057,10 +1983,29 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image65.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Task 2, Task 1, Idle, t1, Time->시간. Callout1 '1 - Task 1의 지연 시간이 끝나 idle task를 선점한다.' Callout2 '2 - Task 1이 mutex를 획득하고 문자열을 출력하기 시작한다. 출력을 마치기 전에 우선순위가 더 높은 Task 2가 선점한다.' Callout3 '3 - Task 2가 mutex 획득을 시도하지만 Task 1이 소유 중이므로 Blocked 상태가 된다. Task 1이 다시 실행된다.' Callout4 '4 - Task 1이 출력을 마치고 mutex를 반납하면 Task 2의 대기가 해제되어 Task 1을 다시 선점한다.' Callout5 '5 - Task 2가 문자열을 출력하고 semaphore를 반납한 뒤 다음 실행 시각까지 Blocked 상태로 기다린다. Task 1도 다시 실행된 뒤 다음 실행 시각까지 대기하므로 idle task만 실행 가능하다.' Original uses semaphore in callout5: preserve that terminology rather than silently correcting to mutex. Keep all execution bars and transitions.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "Mutex execution timeline and five callouts compared; source semaphore wording retained and flagged."
+      },
+      "target_sha256": "004801ee35b8f5daffeee25aab94090a1295125064d1462829a9fc4b0f5e9125",
+      "source_dimensions": [
+        855,
+        485
+      ],
+      "target_dimensions": [
+        1666,
+        944
+      ],
+      "source_notes": [
+        "5번 설명의 semaphore 표기는 원문에 나온 형태를 유지했다. 주변 mutex 설명과의 용어 관계는 원문 검토 대상이다."
+      ]
     },
     {
       "source_path": "media/image66.png",
@@ -1075,10 +2020,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image66.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Labels: High priority task [HP] -> 높은 우선순위 task [HP]; Medium priority task [MP] -> 중간 우선순위 task [MP]; Low priority task [LP] -> 낮은 우선순위 task [LP]. Time->시간; keep t1. Callout1 '1 - LP task가 mutex를 획득한 뒤 HP task에 선점된다.' Callout2 '2 - HP task가 mutex 획득을 시도하지만 LP task가 소유 중이므로 Blocked 상태에서 mutex를 기다린다.' Callout3 '3 - LP task가 계속 실행되지만 mutex를 반납하기 전에 MP task에 선점된다.' Callout4 '4 - MP task가 실행 중이다. HP task는 LP task의 mutex 반납을 기다리지만 LP task는 실행조차 되지 못한다.' Preserve exact green/blue/red execution geometry and arrows.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "Three task priority-inversion timeline and callout relationships compared."
+      },
+      "target_sha256": "677ecfb55be2d7939f42443e0f404baa8445639bcf7e08b005723d7176e4b55f",
+      "source_dimensions": [
+        700,
+        433
+      ],
+      "target_dimensions": [
+        1596,
+        986
+      ]
     },
     {
       "source_path": "media/image67.png",
@@ -1093,10 +2054,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image67.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Labels High priority task [HP] -> 높은 우선순위 task [HP]; Medium priority task [MP] -> 중간 우선순위 task [MP]; Low priority task [LP] -> 낮은 우선순위 task [LP]. Time->시간. Callout1 '1 - LP task가 mutex를 획득한 뒤 HP task에 선점된다.' Callout2 '2 - HP task가 mutex 획득을 시도하지만 LP task가 소유 중이므로 Blocked 상태에서 mutex를 기다린다.' Callout3 '3 - LP task가 HP task의 실행을 막고 있으므로 HP task의 우선순위를 상속한다. MP task가 LP task를 선점할 수 없어 우선순위 역전 시간이 최소화된다. mutex를 반납하면 원래 우선순위로 돌아간다.' Callout4 '4 - LP task가 mutex를 반납하면 HP task가 대기에서 벗어나 mutex를 소유한다. 사용을 마치면 반납한다. MP task는 HP task가 다시 Blocked 상태가 되어야 실행되므로 HP task를 지연시키지 않는다.' Preserve all timeline bars/arrows.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "Priority-inheritance timeline, mutex ownership and temporary priority changes compared."
+      },
+      "target_sha256": "174c73a1265168af591eb66b833f9e56315b9ba51357367651804e0f543be5fb",
+      "source_dimensions": [
+        812,
+        480
+      ],
+      "target_dimensions": [
+        1632,
+        964
+      ]
     },
     {
       "source_path": "media/image68.png",
@@ -1111,10 +2088,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image68.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Labels Task 1 (priority 1) -> Task 1 (우선순위 1); Task 2 (priority 1) -> Task 2 (우선순위 1); keep t1,t2,t3,t4. Callout1 '1 - Task 2가 한 time slice 동안 실행되며 mutex를 획득한다.' 2 '2 - 다음 time slice가 시작되면 Task 1이 실행된다.' 3 '3 - Task 1이 Task 2가 소유한 mutex 획득을 시도하다 Blocked 상태에서 기다린다.' 4 '4 - Task 2가 남은 time slice 동안 실행된다. Task 1이 대기 중이므로 다음 time slice에도 Running 상태를 유지한다.' 5 '5 - Task 2가 mutex를 반납하면 Task 1의 대기가 해제된다.' 6 '6 - Task 1은 다음 time slice가 시작되어야 다시 Running 상태가 된다.' Keep exact delayed scheduling t4 and unblocking earlier; do not make immediate preemption.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "Six callouts and same-priority mutex timeline compared; Task 1 resumes at next time slice after unblock, not immediately."
+      },
+      "target_sha256": "058603559aec078f1c75ac9bcdd47b717c5783e80cf2eca7f24e6d01cd356ab7",
+      "source_dimensions": [
+        660,
+        581
+      ],
+      "target_dimensions": [
+        1337,
+        1176
+      ]
     },
     {
       "source_path": "media/image69.png",
@@ -1129,10 +2122,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image69.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Labels Task 1 (priority 1) -> Task 1 (우선순위 1); Task 2 (priority 1) -> Task 2 (우선순위 1); keep t1..t5. Callout1 '1 - Task 2가 한 time slice 동안 실행되며 mutex를 획득한다.' 2 '2 - 다음 time slice가 시작되면 Task 1이 실행된다.' 3 '3 - Task 1이 Task 2가 소유한 mutex 획득을 시도하다 Blocked 상태에서 기다린다.' 4 '4 - Task 2가 남은 time slice 동안 실행된다. Task 1이 대기 중이므로 다음 time slice에도 Running 상태를 유지한다.' 5 '5 - Task 2가 mutex를 반납하면 Task 1의 대기가 해제된다.' 6 '6 - Task 2가 mutex를 다시 획득한다.' 7 '7 - 다음 time slice에 Task 1이 실행되어 Task 2가 소유한 mutex 획득을 시도하지만 다시 Blocked 상태에서 기다린다.' Preserve all seven callouts and separate 5/6 events, all short green bars and arrows. No time interval may be omitted.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "Seven callouts and same-priority mutex reacquisition timeline compared; separate release/reacquire events and t1 through t5 retained."
+      },
+      "target_sha256": "8fc3476afb28dbce45a07fdf67d98f541bf64139a427e8bd9360ecd5f4bcc8c6",
+      "source_dimensions": [
+        701,
+        573
+      ],
+      "target_dimensions": [
+        1387,
+        1134
+      ]
     },
     {
       "source_path": "media/image70.jpg",
@@ -1150,7 +2159,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        332
+      ],
+      "target_dimensions": [
+        668,
+        332
+      ],
+      "target_sha256": "b55b6ae934278330e5c43ba425aa8dfa8730694a3e21c61c65abf8fcb14c18af"
     },
     {
       "source_path": "media/image71.png",
@@ -1165,10 +2189,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image71.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate title to 'EventBits_t 형식 변수의 event flag'. Bit 16 -> 비트 16; Bit 8 -> 비트 8; Bit 0 -> 비트 0. Bottom left -> '비트 23은 flag 23이다'; bottom right -> '비트 0은 flag 0이다'. EXACT row has 32 cells: eight gray X cells then white cells numbered 23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0. Preserve all 32 cells and both arrows targeting bit23 and bit0. Do not omit/repeat any number. Pure white background, no black letterbox bars. Keep a single horizontal bit row.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "All 32 cells checked: eight X cells and bit labels 23 through 0; markers 16/8/0 and two arrows retained."
+      },
+      "target_sha256": "c33579f494aa043c27e07d571fa8ac93f10529635161ea2ec6ddef676b016e22",
+      "source_dimensions": [
+        921,
+        151
+      ],
+      "target_dimensions": [
+        2170,
+        725
+      ]
     },
     {
       "source_path": "media/image72.png",
@@ -1181,12 +2221,29 @@
           "source_caption": "***Figure 9.2*** *An event group in which only bits 1, 4 and 7 are set, and all the other event flags are clear, making the event group's value 0x92*"
         }
       ],
-      "kind": "numeric-diagram",
-      "target_path": "media/image72.png",
-      "status": "preserve-original",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image72.ko.png",
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate Event Group Value -> 'event group 값'; Bit 16 -> 비트 16; Bit 8 -> 비트 8; Bit 0 -> 비트 0. Preserve EXACTLY 32 cells: first EIGHT gray X cells, then 24 white cells for bits23..0, values sixteen zeros followed by 1,0,0,1,0,0,1,0. Thus ONLY bits7,4,1 are set to 1. No omitted/repeated cells. Keep heading markers aligned with bit16,bit8,bit0. Pure white background, no black letterbox bars. Do not add any new explanation or numbers.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "All 32 cells checked: eight X cells and 24 flags; only bits 7,4,1 set (0x92)."
+      },
+      "source_dimensions": [
+        930,
+        122
+      ],
+      "target_dimensions": [
+        2170,
+        725
+      ],
+      "reason": "직접 확인한 Event Group Value 및 Bit 표제는 한국어로 옮긴다. 비트 값과 배열은 보존한다.",
+      "target_sha256": "c023e9a87888f39913071db3b3e3596583a10eef9362bf1d70ead54f30ae2b20"
     },
     {
       "source_path": "media/image73.jpg",
@@ -1204,7 +2261,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        331
+      ],
+      "target_dimensions": [
+        668,
+        331
+      ],
+      "target_sha256": "1ff01a13e250f6c3f25090052d474ed6e45cc1ddb31cbbf3c09a839b392f1e91"
     },
     {
       "source_path": "media/image74.jpg",
@@ -1222,7 +2294,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        331
+      ],
+      "target_dimensions": [
+        668,
+        331
+      ],
+      "target_sha256": "bd9cd16c24481c6a14be750de45d1b710d029b2ea1afb4d4b17c76c19713a843"
     },
     {
       "source_path": "media/image75.jpg",
@@ -1240,7 +2327,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        331
+      ],
+      "target_dimensions": [
+        668,
+        331
+      ],
+      "target_sha256": "f4953becc05a5d780cc1dafabedb77b082eabaa778589f3409d061b6c74ad753"
     },
     {
       "source_path": "media/image76.png",
@@ -1255,10 +2357,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image76.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate ONLY central callout and communication-object label. Callout: '통신 객체는 queue, event group 또는 여러 종류의 semaphore 중 하나일 수 있다'. Object label: '통신 객체'. Preserve BOTH entire code panels, including every green English comment, punctuation and identifiers, verbatim. Keep void vTask1( void *pvParam ), void vTask2( void *pvParam ), ASendFunction(); AReceiveFunction(); for( ;; ), and all braces/ellipses exactly. Do NOT translate English code comments. Preserve the two blue arrows entering and leaving the communication object.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "Both code/comment panels and send/receive arrows retained; only communication-object explanations localized."
+      },
+      "target_sha256": "746b366713efda1bee1e5c0418ec749363cbfc97f842ee3dc9687be7986aab39",
+      "source_dimensions": [
+        761,
+        371
+      ],
+      "target_dimensions": [
+        1796,
+        876
+      ]
     },
     {
       "source_path": "media/image77.png",
@@ -1273,10 +2391,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image77.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate ONLY the central callout to '이번에는 중간에 통신 객체가 없다'. Preserve both entire code panels with all green English comments, all APIs/identifiers and punctuation unchanged. Keep void vTask1( void *pvParam ), void vTask2( void *pvParam ), ASendFunction(); AReceiveFunction(); exactly. Do not translate code comments. Preserve the single uninterrupted blue arrow directly between two code panels.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "Both code/comment panels retained; direct notification arrow and no-intermediate-object explanation compared."
+      },
+      "target_sha256": "23bdf3bb9371a7ffa5c0e1774091ba6793536942c2be8bbfb959c5109d2b50f1",
+      "source_dimensions": [
+        752,
+        320
+      ],
+      "target_dimensions": [
+        1923,
+        817
+      ]
     },
     {
       "source_path": "media/image78.png",
@@ -1294,7 +2428,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        332
+      ],
+      "target_dimensions": [
+        668,
+        332
+      ],
+      "target_sha256": "2a58c26eae20ac57d550b6f7582cee04fe465fd0c3b06e9915a149fb4d71b646"
     },
     {
       "source_path": "media/image79.png",
@@ -1309,10 +2458,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image79.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Keep Interrupt, Handler, Periodic, Idle, t1,t2 and vHandlerTask() English. Time -> 시간. Callout1 '1 - 대부분의 시간에는 idle task가 실행된다. 500ms마다 Periodic task가 이를 선점한다.' 2 '2 - Periodic task가 첫 메시지를 출력한 뒤 인터럽트를 강제로 발생시킨다. ISR이 즉시 실행된다.' 3 '3 - ISR이 vHandlerTask()에 직접 notification을 보내 대기를 해제한다. Ready 상태에서 우선순위가 가장 높으므로 ISR은 vHandlerTask()로 바로 복귀한다.' 4 '4 - vHandlerTask()가 메시지를 출력한 뒤 다음 notification을 기다리는 Blocked 상태로 돌아간다.' 5 '5 - Periodic task의 우선순위가 다시 가장 높아진다. 두 번째 메시지를 출력하고 다음 주기를 기다리며 Blocked 상태가 된다. 이제 idle task만 실행 가능하다.' Preserve all five callouts and execution geometry.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "Five callouts, interrupt/handler/periodic/idle sequence, two cycles and 500ms value compared."
+      },
+      "target_sha256": "3d9ab9fcf40ab1a84188dac70631eebaac232aacf23fa5e4afd5237373da7be0",
+      "source_dimensions": [
+        881,
+        568
+      ],
+      "target_dimensions": [
+        1562,
+        1007
+      ]
     },
     {
       "source_path": "media/image80.jpg",
@@ -1330,7 +2495,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        668,
+        332
+      ],
+      "target_dimensions": [
+        668,
+        332
+      ],
+      "target_sha256": "62187bc4d18cec083fa7e71f81ae9194664df35b5c27512ecbe74c8dc1f5e321"
     },
     {
       "source_path": "media/image81.png",
@@ -1345,10 +2525,26 @@
       ],
       "kind": "explanatory-diagram",
       "target_path": "ko/assets/image81.ko.png",
-      "status": "pending",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate ONLY headers/outside labels: Application Task 1 -> 애플리케이션 Task 1; Application Task 2 -> 애플리케이션 Task 2; Client Device (Running FreeRTOS) -> 클라이언트 장치 (FreeRTOS 실행); Server Task -> 서버 task; Internet -> 인터넷; Cloud Server -> 클라우드 서버; Task Notifications -> task notification. Keep Queue English. Preserve ALL code panels including green English comments, exact CloudRead(); CloudWrite(); xQueueReceive(); ProcessMessage(); void Task1( ... ), void Task2( ... ), void ServerTask( ... ), for( ;; ), braces and ellipses. Keep all red sending arrows, blue notification arrows, connection through the vertical separator to the cloud, and the server illustration exactly. Do not invent cloud provider logos.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "All three code/comment panels, Queue, notification arrows and cloud link compared."
+      },
+      "target_sha256": "91a9b9acea9d54d13e3064d94912f43d94254084b8654425bf849c5a0d602a24",
+      "source_dimensions": [
+        814,
+        441
+      ],
+      "target_dimensions": [
+        1706,
+        922
+      ]
     },
     {
       "source_path": "media/image82.png",
@@ -1366,7 +2562,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        944,
+        542
+      ],
+      "target_dimensions": [
+        944,
+        542
+      ],
+      "target_sha256": "79efdd9cad9ffbcb237e9f64004b8af8252d909a76c7d8edc7c782028d6286b2"
     },
     {
       "source_path": "media/image83.png",
@@ -1384,7 +2595,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        922,
+        618
+      ],
+      "target_dimensions": [
+        922,
+        618
+      ],
+      "target_sha256": "86b3286203887b88efbc1032611408c28dcc346764d57e5a12525e132d335e7f"
     },
     {
       "source_path": "media/image84.png",
@@ -1402,7 +2628,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        857,
+        579
+      ],
+      "target_dimensions": [
+        857,
+        579
+      ],
+      "target_sha256": "d17dd2ef1d79cdb769f1cf35c5638906997a421ff4a0337a7e11cc1adadbeb9e"
     },
     {
       "source_path": "media/image85.png",
@@ -1420,7 +2661,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        845,
+        566
+      ],
+      "target_dimensions": [
+        845,
+        566
+      ],
+      "target_sha256": "98aa6c94e19018cf8a00fe1c1338dbef023e6f1082543b1bef3297aa99c2974c"
     },
     {
       "source_path": "media/image86.png",
@@ -1438,7 +2694,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        866,
+        573
+      ],
+      "target_dimensions": [
+        866,
+        573
+      ],
+      "target_sha256": "db8d20b8424338a4df162175ca0aa1f415f8eb65bcf1c7739abb0db16e61f97f"
     },
     {
       "source_path": "media/image87.png",
@@ -1456,7 +2727,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        932,
+        623
+      ],
+      "target_dimensions": [
+        932,
+        623
+      ],
+      "target_sha256": "057c9158cdab0102da615a39bd738cb691297960746f3e524f3960ee4db73c26"
     },
     {
       "source_path": "media/image88.png",
@@ -1474,7 +2760,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        505,
+        312
+      ],
+      "target_dimensions": [
+        505,
+        312
+      ],
+      "target_sha256": "8944ac895c2fca2f38c21fcaa2b47e76c8cef124f8eeb5ff5ba0d2c09668da53"
     },
     {
       "source_path": "media/image89.png",
@@ -1492,7 +2793,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        453,
+        287
+      ],
+      "target_dimensions": [
+        453,
+        287
+      ],
+      "target_sha256": "103aa2408b0d4ce1e48a72dc870c3ac72de22c9ae2f45005601b04ccd7dc6b76"
     },
     {
       "source_path": "media/image90.png",
@@ -1510,7 +2826,22 @@
       "status": "preserve-original",
       "method": null,
       "prompt": null,
-      "review": null
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Source viewed; original text and pixels retained; Korean caption/alt suggestions provided separately",
+        "result": "preserved"
+      },
+      "source_dimensions": [
+        528,
+        624
+      ],
+      "target_dimensions": [
+        528,
+        624
+      ],
+      "target_sha256": "1cf164f35a25bc1eb6835615efeadc910e9a90d646cd417394f8aa523fd06a9f"
     },
     {
       "source_path": "media/image91.png",
@@ -1523,12 +2854,38 @@
           "source_caption": ""
         }
       ],
-      "kind": "screenshot",
-      "target_path": "media/image91.png",
-      "status": "preserve-original",
-      "method": null,
-      "prompt": null,
-      "review": null
+      "kind": "explanatory-diagram",
+      "target_path": "ko/assets/image91.ko.png",
+      "status": "agent-checked",
+      "method": "imagegen built-in text-localization",
+      "prompt": "Use case: text-localization. Edit this official FreeRTOS Kernel Book figure into Korean. Preserve the full original diagram exactly: shapes, connections, arrows and their directions, all numbered steps, colored areas, relative dimensions, and original aspect ratio. Use a clean Korean sans-serif font with readable fitting and no clipping. Change only the explanatory text. Keep FreeRTOS API names, macros, task names, identifiers, state names, numbers and units exactly. Do not redesign, embellish, invent content, or add titles/captions/watermarks. Translate headers Logical Priorities -> '논리적 우선순위', Numerical Priorities -> '숫자 우선순위'. Left column upper Higher -> 높음; lower Lower -> 낮음. Second column upper Lower -> 낮음; lower Higher -> 높음. Top right callout -> 'FreeRTOS 커널에 의해 마스킹되지 않는다\\n(이 ISR에서는 FreeRTOS API를 호출할 수 없다.)'. Bottom right -> 'FreeRTOS 커널에 의해 마스킹된다\\n(이 ISR에서는 FreeRTOS API를 호출할 수 있다.)'. Keep central configMAX_SYSCALL_INTERRUPT_PRIORITY EXACTLY and fully visible without clipping. Preserve boundary line, four boxes, both vertical double-headed arrows, top/bottom grouping and all blue outlines. White background, no black bars. Do not invert priority meanings.",
+      "review": {
+        "reviewer": "Codex",
+        "reviewer_kind": "agent",
+        "date": "2026-11-01",
+        "scope": "Direct visual comparison against source",
+        "result": "passed",
+        "details": "Logical/numeric priority directions, masking boundary and exact configMAX_SYSCALL_INTERRUPT_PRIORITY spelling compared."
+      },
+      "reason": "직접 시각 확인 결과 제품 화면이 아닌 인터럽트 우선순위 설명 도표다. 한글화 대상으로 정정.",
+      "target_sha256": "cce13628a882e68f8083911699eb6515b6bb3bb1eef804509941db4de46f2563",
+      "source_dimensions": [
+        7396,
+        4834
+      ],
+      "target_dimensions": [
+        1552,
+        1013
+      ]
     }
-  ]
+  ],
+  "review_summary": {
+    "date": "2026-11-01",
+    "reviewer_kind": "agent",
+    "localized_diagrams": 53,
+    "preserved_images": 29,
+    "unused_originals": 4,
+    "scope": "Direct visual comparison of Korean wording, identifiers, numbers and diagram semantics; source and target hashes verified",
+    "remaining": "Integrated Korean book rendering and human publication review; source anomalies retained and flagged"
+  }
 }

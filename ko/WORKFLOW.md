@@ -2,6 +2,8 @@
 
 이 문서는 별도 번역 작업을 시작할 때 사용한다. 본문 번역 요청이 있기 전에는 지침·원문·asset 준비 상태를 유지한다.
 
+그림 작업과 동시에 본문을 번역할 때는 이미 준비된 별도 worktree와 [병행 번역 인계](IMAGE_HANDOFF.md)의 지시문을 사용한다.
+
 ## 1. 작업 입력
 
 - 원문: `translation-manifest.json`에 기록한 commit의 해당 파일과 blob
