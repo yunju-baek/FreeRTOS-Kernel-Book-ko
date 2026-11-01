@@ -27,7 +27,7 @@
       "repository_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel-Partner-Supported-Ports"
     }
   ],
-  "style_version": "0.4",
+  "style_version": "0.5",
   "glossary_version": "0.4",
   "status_values": [
     "not-started",
@@ -73,6 +73,15 @@
             "needs-human-check: final full-text copyedit"
           ],
           "report": "ko/REVIEW.md"
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "페이지 상단 YAML front matter 제거. 원문·번역 메타데이터는 기존 manifest에서 확인하고 본문 나머지는 그대로 보존.",
+          "result": "pass",
+          "unresolved": []
         }
       ]
     },
@@ -130,6 +139,15 @@
           "reviewer_kind": "agent",
           "date": "2026-11-01",
           "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "페이지 상단 YAML front matter 제거. 원문·번역 메타데이터는 기존 manifest에서 확인하고 본문 나머지는 그대로 보존.",
           "result": "pass",
           "unresolved": []
         }
@@ -194,6 +212,15 @@
           "reviewer_kind": "agent",
           "date": "2026-11-01",
           "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "페이지 상단 YAML front matter 제거. 원문·번역 메타데이터는 기존 manifest에서 확인하고 본문 나머지는 그대로 보존.",
           "result": "pass",
           "unresolved": []
         }
@@ -270,6 +297,15 @@
           "reviewer_kind": "agent",
           "date": "2026-11-01",
           "scope": "같은 영어를 반복한 병기·제목 정리, 한국어 전용 캡션 번호 적용, 파일명 내부 풀이 제거, 코드·anchor·번호·그림 보존 검사",
+          "result": "pass",
+          "unresolved": []
+        },
+        {
+          "stage": "editorial-correction",
+          "reviewer": "Codex",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01",
+          "scope": "페이지 상단 YAML front matter 제거. 원문·번역 메타데이터는 기존 manifest에서 확인하고 본문 나머지는 그대로 보존.",
           "result": "pass",
           "unresolved": []
         }
@@ -977,6 +1013,6 @@
     "human_review": "not-performed",
     "example_execution": "not-performed",
     "historical_reviews": "Earlier reviews are retained as historical records; the latest Codex review records code/caption fixes and resolves previous needs-image-check integration items.",
-    "editorial_followup": "2026-11-01: repeated English glosses removed; caption labels use Korean only; style/glossary v0.4."
+    "editorial_followup": "2026-11-01: repeated English glosses removed; captions use Korean only; page front matter removed; style v0.5, glossary v0.4."
   }
 }

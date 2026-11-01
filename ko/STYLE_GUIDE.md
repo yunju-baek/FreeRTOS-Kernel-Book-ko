@@ -1,6 +1,6 @@
 # FreeRTOS Kernel Book 한국어판 번역 지침
 
-버전: v0.4 · 갱신일: 2026-11-01
+버전: v0.5 · 갱신일: 2026-11-01
 
 상태: 한국어 본문·그림 통합본과 이후 교정에 적용하는 기준본. 현재 검수 범위는 REVIEW.md에 기록한다.
 
@@ -132,20 +132,9 @@ FreeRTOS-Kernel-Book-ko/
 
 ## 8. 파일별 기록과 검수
 
-각 번역 파일에는 독자에게 필요한 번역 상태를 간결히 표시하고, 작업 기록에는 다음 정보를 둔다.
+번역 페이지에는 YAML front matter나 작업용 메타데이터 헤더를 붙이지 않는다. 원문에서 이어받은 제목·anchor 또는 본문으로 시작한다. 원문 출처·기준 commit·파일 hash·지침 버전·번역 상태·검수자·날짜는 `translation-manifest.json`에서 관리한다.
 
-```yaml
-upstream_repository: https://github.com/FreeRTOS/FreeRTOS-Kernel-Book
-upstream_commit: ba20b2f820926587d5ee20ce312b3789d63f795c
-source_path: ch04.md
-source_blob_sha: <해당 파일의 Git blob SHA>
-translation_path: ko/ch04.md
-style_version: 0.4
-glossary_version: 0.4
-status: draft
-translated_at: <실제 번역 날짜>
-reviewed_by: <실제 검토자 또는 미검토>
-```
+manifest의 `upstream`에는 공식 저장소와 기준 commit을, `files`에는 `source_path`, `source_blob_sha`, `translation_path`, `status`, `translated_at`, `reviews`를 기록한다. 지침·용어집 버전은 `style_version`, `glossary_version`에 기록한다. 독자에게 필요한 판본 안내는 저장소 README와 검수 결과 문서에 둔다.
 
 `not-started → draft → source-checked → language-reviewed → release-ready` 순서로 상태를 기록한다. 단계는 미착수, 번역 생성, 원문 대조, 한국어 검토, 배포 요건 확인을 뜻한다. 자동 검사만으로 사람이 검토했다고 표시하지 않는다. 미해결 항목에는 `check-against-source` 또는 `needs-human-check`와 정확한 위치를 남긴다.
 

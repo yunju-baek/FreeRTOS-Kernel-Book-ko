@@ -85,6 +85,7 @@ def main():
         if not dst.exists():
             continue
         en, ko = src.read_text(), dst.read_text()
+        check(not re.match(r'\A\ufeff?---[ \t]*\r?\n[A-Za-z_][A-Za-z0-9_-]*:', ko), f'Translation page front matter: {dst.name}')
         texts[entry['translation_path']] = ko
         source_blob = hashlib.sha1(b'blob ' + str(src.stat().st_size).encode() + b'\0' + src.read_bytes()).hexdigest()
         check(source_blob == entry['source_blob_sha'], f'Manifest source blob: {src.name}')

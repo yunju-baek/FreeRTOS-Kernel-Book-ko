@@ -13,7 +13,7 @@
 
 - 공식 원본은 `https://github.com/FreeRTOS/FreeRTOS-Kernel-Book`이다. 기존 ZIP·웹북·블로그를 원문 대신 사용하지 않는다.
 - upstream에서 추적하는 영어 본문, 목차, 코드, 그림, 라이선스, submodule을 보존한다. 한국어판 공개 안내인 루트 `README.md`는 예외이며, 원래 소개는 `README.upstream.md`에 byte 단위로 보존한다.
-- 한국어 본문은 `ko/`에 원문 파일명과 대응시켜 작성한다. 그림 한글화 결과는 `ko/assets/`에 둔다.
+- 한국어 본문은 `ko/`에 원문 파일명과 대응시켜 작성한다. 그림 한글화 결과는 `ko/assets/`에 둔다. 번역 페이지에 YAML front matter나 작업용 메타데이터 헤더를 넣지 않고, 출처·상태·검수 기록은 `ko/translation-manifest.json`에서 관리한다.
 - `origin/main`은 한국어판 정본이다. `upstream`은 공식 영문 저장소이고, `upstream-baseline` branch와 manifest에 영문 기준선을 보존한다. 후속 변경은 `origin/main`에서 작업 branch를 만들고 한국어판 저장소에 PR로 제출한다.
 - upstream 갱신은 번역과 별도 작업으로 진행한다. fetch만으로 manifest의 기준 commit을 바꾸지 않는다. 장별 변경과 기존 번역의 영향을 대조한 뒤 기준을 갱신한다.
 - 사용자가 승인한 공개 정본은 `https://github.com/yunju-baek/FreeRTOS-Kernel-Book-ko`이다. 공식 upstream 기여는 별도 요청 범위이며, 한국어판 작업을 공식 저장소에 직접 push하거나 PR로 제출하지 않는다.
