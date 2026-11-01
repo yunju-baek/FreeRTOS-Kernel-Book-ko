@@ -529,46 +529,106 @@
       "source_path": "toc.md",
       "source_blob_sha": "27c58bee458c132f4a173346a4309e395bdbed0a",
       "translation_path": "ko/toc.md",
-      "status": "not-started",
-      "translated_sections": [],
-      "translated_at": null,
-      "reviews": []
+      "status": "source-checked",
+      "translated_sections": [
+        "full"
+      ],
+      "translated_at": "2026-11-01T09:31:34.655331+09:00",
+      "reviews": [
+        {
+          "stage": "source-checked",
+          "reviewer": "Antigravity",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01T09:31:34.655331+09:00",
+          "scope": "toc.md full text translation and verification",
+          "result": "pass",
+          "unresolved": []
+        }
+      ]
     },
     {
       "source_path": "booktitle.md",
       "source_blob_sha": "220b0726b9ff98fb2ac4d1fa913e5b2c001147f9",
       "translation_path": "ko/booktitle.md",
-      "status": "not-started",
-      "translated_sections": [],
-      "translated_at": null,
-      "reviews": []
+      "status": "source-checked",
+      "translated_sections": [
+        "full"
+      ],
+      "translated_at": "2026-11-01T09:31:34.655331+09:00",
+      "reviews": [
+        {
+          "stage": "source-checked",
+          "reviewer": "Antigravity",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01T09:31:34.655331+09:00",
+          "scope": "booktitle.md full text translation and verification",
+          "result": "pass",
+          "unresolved": []
+        }
+      ]
     },
     {
       "source_path": "dedication.md",
       "source_blob_sha": "a8d24af343c3bb27486030289a067c26f9a95ece",
       "translation_path": "ko/dedication.md",
-      "status": "not-started",
-      "translated_sections": [],
-      "translated_at": null,
-      "reviews": []
+      "status": "source-checked",
+      "translated_sections": [
+        "full"
+      ],
+      "translated_at": "2026-11-01T09:31:34.655331+09:00",
+      "reviews": [
+        {
+          "stage": "source-checked",
+          "reviewer": "Antigravity",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01T09:31:34.655331+09:00",
+          "scope": "dedication.md full text translation and verification",
+          "result": "pass",
+          "unresolved": []
+        }
+      ]
     },
     {
       "source_path": "abbreviations.md",
       "source_blob_sha": "f653ab73086b87f0711f29f542b987d5f704d0e9",
       "translation_path": "ko/abbreviations.md",
-      "status": "not-started",
-      "translated_sections": [],
-      "translated_at": null,
-      "reviews": []
+      "status": "source-checked",
+      "translated_sections": [
+        "full"
+      ],
+      "translated_at": "2026-11-01T09:31:34.655331+09:00",
+      "reviews": [
+        {
+          "stage": "source-checked",
+          "reviewer": "Antigravity",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01T09:31:34.655331+09:00",
+          "scope": "abbreviations.md full text translation and verification",
+          "result": "pass",
+          "unresolved": []
+        }
+      ]
     },
     {
       "source_path": "copyright.md",
       "source_blob_sha": "cb0e62626a337e151c0cc5d76e54eb79831aac2a",
       "translation_path": "ko/copyright.md",
-      "status": "not-started",
-      "translated_sections": [],
-      "translated_at": null,
-      "reviews": []
+      "status": "source-checked",
+      "translated_sections": [
+        "full"
+      ],
+      "translated_at": "2026-11-01T09:31:34.655331+09:00",
+      "reviews": [
+        {
+          "stage": "source-checked",
+          "reviewer": "Antigravity",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01T09:31:34.655331+09:00",
+          "scope": "copyright.md full text translation and verification",
+          "result": "pass",
+          "unresolved": []
+        }
+      ]
     }
   ]
 }

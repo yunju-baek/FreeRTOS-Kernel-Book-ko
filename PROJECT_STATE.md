@@ -40,4 +40,10 @@ Codex에서 `ko/assets/`에 한국어 그림을 준비하고 있다. 파일별 �
 - **ch11.md (11 저전력 지원)**: 번역 및 `source-checked` 검수 완료 (`ko/ch11.md`). 11개 헤딩 `한글(영어)` 병기, 7개 Listing 코드 100% 보존 완료.
 - **ch12.md (12 개발자 지원)**: 번역 및 `source-checked` 검수 완료 (`ko/ch12.md`). 20개 헤딩 `한글(영어)` 병기, 12개 Listing 코드 100% 보존, Figure 12.1~12.8 및 디버거 스크린샷 매핑 완료.
 - **ch13.md (13 문제 해결)**: 번역 및 `source-checked` 검수 완료 (`ko/ch13.md`). 20개 헤딩 `한글(영어)` 병기, 3개 Listing 코드 100% 보존, Figure 13.1(image91) 매핑, 각주 `[^28]` 보존 완료.
-- **다음 시작점**: 부속 문서 5종(`booktitle.md`, `toc.md`, `abbreviations.md`, `copyright.md`, `dedication.md`) 번역 착수.
+- **부속 문서 5종 (Front/Back Matter)**: 번역 및 `source-checked` 검수 완료 (`ko/booktitle.md`, `ko/toc.md`, `ko/abbreviations.md`, `ko/copyright.md`, `ko/dedication.md`).
+  - `ko/toc.md`: 585개 링크 100% 검증 (깨진 링크 0개), 273개 헤딩 및 312개 예제·그림·코드·표 항목 `한글(영어)` 병기 매핑 완료.
+  - `ko/booktitle.md`: 표제, 부제, 저자, 버전 및 상표 각주 번역 완료.
+  - `ko/abbreviations.md`: 17개 표준 약어 영한 대역 테이블 작성 완료.
+  - `ko/copyright.md`: 저작권, 피드백 안내 및 AWS 로고 링크 완료.
+  - `ko/dedication.md`: 헌사 번역 완료.
+- **전체 완료 상태**: 본문 13개 챕터 및 부속 문서 5종(총 18개 문서) 100% 번역 및 원문 검증(`source-checked`) 완료.
