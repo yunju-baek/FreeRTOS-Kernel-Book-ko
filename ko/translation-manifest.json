@@ -390,10 +390,39 @@
       "source_path": "ch10.md",
       "source_blob_sha": "244fec29482214400c5bb6881ed945cfbafb7761",
       "translation_path": "ko/ch10.md",
-      "status": "not-started",
-      "translated_sections": [],
-      "translated_at": null,
-      "reviews": []
+      "status": "source-checked",
+      "translated_sections": [
+        "10.1.1",
+        "10.1.2",
+        "10.1.3",
+        "10.2.1",
+        "10.2.2",
+        "10.2.3",
+        "10.3.1",
+        "10.3.1.1",
+        "10.3.2",
+        "10.3.3",
+        "10.3.4",
+        "10.3.5",
+        "10.3.6",
+        "10.3.7",
+        "10.3.8",
+        "10.3.9"
+      ],
+      "translated_at": "2026-11-01T09:22:26.782155+09:00",
+      "reviews": [
+        {
+          "stage": "source-checked",
+          "reviewer": "Antigravity",
+          "reviewer_kind": "agent",
+          "date": "2026-11-01T09:22:26.782155+09:00",
+          "scope": "ch10.md full text, 20 headings, 18 listings, 6 figures",
+          "result": "pass",
+          "unresolved": [
+            "needs-image-check"
+          ]
+        }
+      ]
     },
     {
       "source_path": "ch11.md",
